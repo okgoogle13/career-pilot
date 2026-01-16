@@ -1,0 +1,453 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "1.0.0",
+    "last_updated": "2026-01-11T12:46:35+11:00",
+    "description": "Shadow Manifest: Real-time gap analysis between documentation and implementation",
+    "metadata": {
+        "total_components": 19,
+        "live": 9,
+        "partial": 3,
+        "planned": 7,
+        "completion_rate": "47%"
+    },
+    "components": {
+        "UI-COMP-001": {
+            "id": "UI-COMP-001",
+            "name": "Value Prop Hero",
+            "status": "live",
+            "page": "Landing Page",
+            "phase": "Phase 0: Entry & Onboarding",
+            "file": "frontend/src/features/landing/LandingPage.tsx",
+            "doc_ref": "DOC-006#landing-page",
+            "last_modified": null
+        },
+        "UI-COMP-002": {
+            "id": "UI-COMP-002",
+            "name": "Interactive Roadmap",
+            "status": "planned",
+            "page": "Landing Page",
+            "phase": "Phase 0: Entry & Onboarding",
+            "file": null,
+            "doc_ref": "DOC-006#landing-page",
+            "blocker": "Design spec needed for 4-phase timeline interaction"
+        },
+        "UI-COMP-003": {
+            "id": "UI-COMP-003",
+            "name": "Firebase Auth Portal",
+            "status": "live",
+            "page": "Authentication",
+            "phase": "Phase 0: Entry & Onboarding",
+            "file": "frontend/src/features/auth/Login.tsx",
+            "doc_ref": "DOC-006#authentication",
+            "last_modified": null
+        },
+        "UI-COMP-004": {
+            "id": "UI-COMP-004",
+            "name": "Professional Persona Setup",
+            "status": "planned",
+            "page": "Onboarding",
+            "phase": "Phase 0: Entry & Onboarding",
+            "file": null,
+            "doc_ref": "DOC-006#authentication",
+            "blocker": "Industry taxonomy database required"
+        },
+        "UI-COMP-101": {
+            "id": "UI-COMP-101",
+            "name": "Multi-File Drag-and-Drop",
+            "status": "live",
+            "page": "The Brain (Ingestion)",
+            "phase": "Phase 1: The Career Brain",
+            "file": "frontend/src/pages/IngestionPage.tsx",
+            "doc_ref": "DOC-006#ingestion-dashboard",
+            "last_modified": "2026-01-08T10:23:00+11:00"
+        },
+        "UI-COMP-102": {
+            "id": "UI-COMP-102",
+            "name": "Real-time Parsing Indicator",
+            "status": "live",
+            "page": "The Brain (Ingestion)",
+            "phase": "Phase 1: The Career Brain",
+            "file": "frontend/src/pages/IngestionPage.tsx",
+            "doc_ref": "DOC-006#ingestion-dashboard",
+            "implementation": "Genkit flows + UI feedback",
+            "last_modified": "2026-01-08T10:23:00+11:00"
+        },
+        "UI-COMP-103": {
+            "id": "UI-COMP-103",
+            "name": "SplitHeader",
+            "status": "live",
+            "page": "The Brain (Ingestion)",
+            "phase": "Phase 1: The Career Brain",
+            "file": "frontend/src/components/shared/SplitHeader.tsx",
+            "doc_ref": "DOC-006#ingestion-dashboard",
+            "last_modified": null
+        },
+        "UI-COMP-104": {
+            "id": "UI-COMP-104",
+            "name": "Side-by-Side Resolver",
+            "status": "planned",
+            "page": "Reconciliation Workspace",
+            "phase": "Phase 1: The Career Brain",
+            "file": null,
+            "doc_ref": "DOC-006#reconciliation-workspace",
+            "blocker": "Conflict detection logic not implemented"
+        },
+        "UI-COMP-105": {
+            "id": "UI-COMP-105",
+            "name": "Voice Capture Interface",
+            "status": "planned",
+            "page": "Reconciliation Workspace",
+            "phase": "Phase 1: The Career Brain",
+            "file": null,
+            "doc_ref": "DOC-006#reconciliation-workspace",
+            "blocker": "Stylometry analysis module needed"
+        },
+        "UI-COMP-106": {
+            "id": "UI-COMP-106",
+            "name": "OAuth Management Center",
+            "status": "planned",
+            "page": "Integration Hub",
+            "phase": "Phase 1: The Career Brain",
+            "file": null,
+            "doc_ref": "DOC-006#integration-hub",
+            "blocker": "OAuth connectors not implemented"
+        },
+        "UI-COMP-201": {
+            "id": "UI-COMP-201",
+            "name": "JobMatchCard",
+            "status": "live",
+            "page": "Opportunity Feed",
+            "phase": "Phase 2: The Sentry",
+            "file": "frontend/src/features/opportunities/JobMatchCard.tsx",
+            "doc_ref": "DOC-006#extension-sentry",
+            "last_modified": null
+        },
+        "UI-COMP-202": {
+            "id": "UI-COMP-202",
+            "name": "Email Inbox Watcher Config",
+            "status": "planned",
+            "page": "Opportunity Feed",
+            "phase": "Phase 2: The Sentry",
+            "file": null,
+            "doc_ref": "DOC-006#extension-sentry",
+            "blocker": "Nylas/Gmail integration needed"
+        },
+        "UI-COMP-203": {
+            "id": "UI-COMP-203",
+            "name": "StatusPill",
+            "status": "live",
+            "page": "Opportunity Feed",
+            "phase": "Phase 2: The Sentry",
+            "file": "frontend/src/components/shared/StatusPill.tsx",
+            "doc_ref": "DOC-006#extension-sentry",
+            "implementation": "Concept implemented",
+            "last_modified": null
+        },
+        "UI-COMP-301": {
+            "id": "UI-COMP-301",
+            "name": "Split-Screen Markdown Editor",
+            "status": "planned",
+            "page": "The Lab (Editor)",
+            "phase": "Phase 3: The Laboratory",
+            "file": null,
+            "doc_ref": "DOC-006#ecosystem-sandbox",
+            "blocker": "Split-screen layout + Evidence Library needed"
+        },
+        "UI-COMP-302": {
+            "id": "UI-COMP-302",
+            "name": "Evidence Library Sidebar",
+            "status": "planned",
+            "page": "The Lab (Editor)",
+            "phase": "Phase 3: The Laboratory",
+            "file": null,
+            "doc_ref": "DOC-006#ecosystem-sandbox",
+            "blocker": "Drag-and-drop evidence cards not implemented"
+        },
+        "UI-COMP-303": {
+            "id": "UI-COMP-303",
+            "name": "S-Global Heatmap / BreakdownGrid",
+            "status": "live",
+            "page": "The Lab (Audit)",
+            "phase": "Phase 3: The Laboratory",
+            "file": "frontend/src/features/analysis/Analysis.tsx",
+            "doc_ref": "DOC-006#global-audit-report",
+            "last_modified": null
+        },
+        "UI-COMP-304": {
+            "id": "UI-COMP-304",
+            "name": "Quality Gate Interface",
+            "status": "partial",
+            "page": "The Lab (Audit)",
+            "phase": "Phase 3: The Laboratory",
+            "file": "frontend/src/features/analysis/Analysis.tsx",
+            "doc_ref": "DOC-006#global-audit-report",
+            "implementation": "Score display exists, gate lock UI needs enhancement",
+            "blocker": "Confetti celebration + locked state visual polish"
+        },
+        "UI-COMP-305": {
+            "id": "UI-COMP-305",
+            "name": "AssetLibrary",
+            "status": "live",
+            "page": "The Lab (Audit)",
+            "phase": "Phase 3: The Laboratory",
+            "file": "frontend/src/features/analysis/AssetLibrary.tsx",
+            "doc_ref": "DOC-006#global-audit-report",
+            "last_modified": null
+        },
+        "UI-COMP-401": {
+            "id": "UI-COMP-401",
+            "name": "Modular Theme Selector",
+            "status": "planned",
+            "page": "Template Gallery",
+            "phase": "Phase 4: The Studio",
+            "file": null,
+            "doc_ref": "DOC-006#template-gallery",
+            "blocker": "Theme carousel not built"
+        },
+        "UI-COMP-402": {
+            "id": "UI-COMP-402",
+            "name": "Layout Preview",
+            "status": "planned",
+            "page": "Template Gallery",
+            "phase": "Phase 4: The Studio",
+            "file": null,
+            "doc_ref": "DOC-006#template-gallery",
+            "blocker": "Template system not designed"
+        },
+        "UI-COMP-403": {
+            "id": "UI-COMP-403",
+            "name": "DocumentCard",
+            "status": "live",
+            "page": "WYSIWYG Designer",
+            "phase": "Phase 4: The Studio",
+            "file": "frontend/src/features/documents/DocumentCard.tsx",
+            "doc_ref": "DOC-006#wysiwyg-designer",
+            "last_modified": null
+        },
+        "UI-COMP-404": {
+            "id": "UI-COMP-404",
+            "name": "ProfileView",
+            "status": "live",
+            "page": "WYSIWYG Designer",
+            "phase": "Phase 4: The Studio",
+            "file": "frontend/src/features/profile/ProfileView.tsx",
+            "doc_ref": "DOC-006#wysiwyg-designer",
+            "last_modified": null
+        },
+        "UI-COMP-405": {
+            "id": "UI-COMP-405",
+            "name": "NativeAnchor",
+            "status": "live",
+            "page": "WYSIWYG Designer",
+            "phase": "Phase 4: The Studio",
+            "file": "frontend/src/components/shared/NativeAnchor.tsx",
+            "doc_ref": "DOC-006#wysiwyg-designer",
+            "implementation": "Flora decoration component",
+            "last_modified": null
+        },
+        "UI-COMP-501": {
+            "id": "UI-COMP-501",
+            "name": "Kanban Lifecycle Board",
+            "status": "live",
+            "page": "Application Tracker",
+            "phase": "Phase 5: Command Center",
+            "file": "frontend/src/features/applications/KanbanBoard.tsx",
+            "doc_ref": "DOC-006#application-tracker",
+            "last_modified": null
+        },
+        "UI-COMP-502": {
+            "id": "UI-COMP-502",
+            "name": "Inbound Opportunity Feed",
+            "status": "partial",
+            "page": "Application Tracker",
+            "phase": "Phase 5: Command Center",
+            "file": "frontend/src/features/opportunities/Opportunities.tsx",
+            "doc_ref": "DOC-006#application-tracker",
+            "implementation": "Integrated in /opportunities route",
+            "blocker": "Needs dedicated feed view in tracker"
+        },
+        "UI-COMP-503": {
+            "id": "UI-COMP-503",
+            "name": "Dashboard Metrics",
+            "status": "live",
+            "page": "Dashboard",
+            "phase": "Phase 5: Command Center",
+            "file": "frontend/src/features/dashboard/Dashboard.tsx",
+            "doc_ref": "DOC-006#application-tracker",
+            "last_modified": null
+        }
+    },
+    "features": {
+        "1.1": {
+            "id": "1.1",
+            "name": "Batch Ingestion",
+            "status": "live",
+            "backend": "live",
+            "frontend": "live",
+            "doc_ref": "DOC-006#feature-1.1",
+            "implementation": "Genkit flows + drag-drop UI"
+        },
+        "1.2": {
+            "id": "1.2",
+            "name": "AI Data Reconciliation",
+            "status": "planned",
+            "backend": "missing",
+            "frontend": "planned",
+            "doc_ref": "DOC-006#feature-1.2",
+            "blocker": "Conflict detection logic required"
+        },
+        "1.3": {
+            "id": "1.3",
+            "name": "Authentic Voice Capture",
+            "status": "planned",
+            "backend": "missing",
+            "frontend": "planned",
+            "doc_ref": "DOC-006#feature-1.3",
+            "blocker": "Stylometry analysis module needed"
+        },
+        "1.4": {
+            "id": "1.4",
+            "name": "Integration Hub",
+            "status": "partial",
+            "backend": "missing",
+            "frontend": "partial",
+            "doc_ref": "DOC-006#feature-1.4",
+            "blocker": "OAuth connectors not implemented"
+        },
+        "2.1": {
+            "id": "2.1",
+            "name": "Niche Scraper Extension",
+            "status": "planned",
+            "backend": "n/a",
+            "frontend": "missing",
+            "doc_ref": "DOC-006#feature-2.1",
+            "blocker": "Browser extension not in repo"
+        },
+        "2.2": {
+            "id": "2.2",
+            "name": "Email Opportunity Harvester",
+            "status": "planned",
+            "backend": "missing",
+            "frontend": "planned",
+            "doc_ref": "DOC-006#feature-2.2",
+            "blocker": "Nylas/Gmail integration needed"
+        },
+        "2.3": {
+            "id": "2.3",
+            "name": "Deadline Sentinel",
+            "status": "planned",
+            "backend": "missing",
+            "frontend": "n/a",
+            "doc_ref": "DOC-006#feature-2.3",
+            "blocker": "Task manager bridge required"
+        },
+        "3.1": {
+            "id": "3.1",
+            "name": "Ecosystem Sandbox",
+            "status": "partial",
+            "backend": "partial",
+            "frontend": "partial",
+            "doc_ref": "DOC-006#feature-3.1",
+            "implementation": "KSC exists, needs split-screen + Evidence Library"
+        },
+        "3.2": {
+            "id": "3.2",
+            "name": "Weighted Scoring Gate",
+            "status": "live",
+            "backend": "live",
+            "frontend": "live",
+            "doc_ref": "DOC-006#feature-3.2",
+            "implementation": "Gated UI implemented on Page 10"
+        },
+        "3.3": {
+            "id": "3.3",
+            "name": "STAR-Method Auditor",
+            "status": "partial",
+            "backend": "partial",
+            "frontend": "partial",
+            "doc_ref": "DOC-006#feature-3.3",
+            "implementation": "Basic validation exists, needs S/T/A/R scoring"
+        },
+        "3.4": {
+            "id": "3.4",
+            "name": "Contextual Multiplier",
+            "status": "planned",
+            "backend": "missing",
+            "frontend": "planned",
+            "doc_ref": "DOC-006#feature-3.4",
+            "blocker": "Industry weighting not implemented"
+        },
+        "3.5": {
+            "id": "3.5",
+            "name": "Industry Taxonomy Mapping",
+            "status": "planned",
+            "backend": "missing",
+            "frontend": "planned",
+            "doc_ref": "DOC-006#feature-3.5",
+            "blocker": "Taxonomy database required"
+        },
+        "4.1": {
+            "id": "4.1",
+            "name": "Modular Template Gallery",
+            "status": "planned",
+            "backend": "n/a",
+            "frontend": "missing",
+            "doc_ref": "DOC-006#feature-4.1",
+            "blocker": "Theme carousel not built"
+        },
+        "4.2": {
+            "id": "4.2",
+            "name": "Parser View Toggle",
+            "status": "planned",
+            "backend": "n/a",
+            "frontend": "missing",
+            "doc_ref": "DOC-006#feature-4.2",
+            "blocker": "ATS text layer visualization needed"
+        },
+        "4.3": {
+            "id": "4.3",
+            "name": "Text-Layered PDF Export",
+            "status": "partial",
+            "backend": "partial",
+            "frontend": "live",
+            "doc_ref": "DOC-006#feature-4.3",
+            "implementation": "Basic PDF gen exists, needs PDF/A-3 compliance"
+        },
+        "5.1": {
+            "id": "5.1",
+            "name": "Lifecycle Kanban Board",
+            "status": "live",
+            "backend": "live",
+            "frontend": "live",
+            "doc_ref": "DOC-006#feature-5.1",
+            "implementation": "Firestore + drag-drop UI"
+        },
+        "5.2": {
+            "id": "5.2",
+            "name": "One-Click Outreach",
+            "status": "planned",
+            "backend": "missing",
+            "frontend": "missing",
+            "doc_ref": "DOC-006#feature-5.2",
+            "blocker": "Email template system needed"
+        }
+    },
+    "logic_gates": {
+        "quality_gate": {
+            "name": "Quality Gate (Phase 3 → Phase 4)",
+            "trigger": "application.audit.global_match_score >= 85",
+            "effect": "Unlock Studio navigation",
+            "status": "partial",
+            "implementation": "Score calculation exists, UI lock needs enhancement",
+            "doc_ref": "DOC-006#state-quality-gate"
+        },
+        "voice_alignment": {
+            "name": "Authentic Voice Gate",
+            "trigger": "voice_match > 0.8",
+            "effect": "Exit Phase 1 allowed",
+            "status": "planned",
+            "blocker": "Stylometry module not implemented",
+            "doc_ref": "DOC-008#component-logic"
+        }
+    }
+}

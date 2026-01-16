@@ -1,0 +1,2164 @@
+{
+  "generatedAt": "2025-12-27T01:32:11.724Z",
+  "totalComponents": 65,
+  "componentsByCategory": {
+    "other": 14,
+    "ui": 51
+  },
+  "components": [
+    {
+      "name": "ElectricTabs",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/electric/tabs/ElectricTabs.tsx",
+      "relativePath": "components/electric/tabs/ElectricTabs.tsx",
+      "category": "other",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "Tab",
+        "ElectricTabsProps",
+        "ElectricTabs"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 83,
+      "complexity": "medium",
+      "dependencies": [
+        "../../../lib/cn"
+      ],
+      "isReusable": false,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "ImageWithFallback",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/figma/ImageWithFallback.tsx",
+      "relativePath": "components/figma/ImageWithFallback.tsx",
+      "category": "other",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "ImageWithFallback"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 33,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": false,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "ApplicationCard",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/shared/ApplicationCard.tsx",
+      "relativePath": "components/shared/ApplicationCard.tsx",
+      "category": "other",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/applications/ApplicationTracker.tsx"
+      ],
+      "exports": [
+        "ApplicationCard"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 66,
+      "complexity": "medium",
+      "dependencies": [],
+      "isReusable": false,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "ChartPane",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/shared/ChartPane.tsx",
+      "relativePath": "components/shared/ChartPane.tsx",
+      "category": "other",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/analysis/Analysis.tsx"
+      ],
+      "exports": [
+        "ChartPane"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 25,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": false,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": true,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "EditableField",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/shared/EditableField.tsx",
+      "relativePath": "components/shared/EditableField.tsx",
+      "category": "other",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/onboarding/components/ValidationDashboard.tsx"
+      ],
+      "exports": [
+        "EditableField"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 156,
+      "complexity": "medium",
+      "dependencies": [],
+      "isReusable": false,
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "migrated",
+      "usesDesignTokens": true,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "IconBadge",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/shared/IconBadge.tsx",
+      "relativePath": "components/shared/IconBadge.tsx",
+      "category": "other",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "IconBadge"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 37,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": false,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "ImpactEnhancements",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/shared/ImpactEnhancements.tsx",
+      "relativePath": "components/shared/ImpactEnhancements.tsx",
+      "category": "other",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/analysis/Analysis.tsx"
+      ],
+      "exports": [
+        "ImpactEnhancements"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 82,
+      "complexity": "medium",
+      "dependencies": [
+        "../../hooks/useAnalysis"
+      ],
+      "isReusable": false,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "KeywordTag",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/shared/KeywordTag.tsx",
+      "relativePath": "components/shared/KeywordTag.tsx",
+      "category": "other",
+      "usageCount": 2,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/analysis/Analysis.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/style-guide/StyleGuide.tsx"
+      ],
+      "exports": [
+        "KeywordTag"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 21,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": false,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "MetricCard",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/shared/MetricCard.tsx",
+      "relativePath": "components/shared/MetricCard.tsx",
+      "category": "other",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/analysis/Analysis.tsx"
+      ],
+      "exports": [
+        "MetricCard"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 39,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": false,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "PageHeader",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/shared/PageHeader.tsx",
+      "relativePath": "components/shared/PageHeader.tsx",
+      "category": "other",
+      "usageCount": 7,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/analysis/Analysis.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/applications/ApplicationTracker.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/documents/Documents.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/ksc-generator/KSCGenerator.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/opportunities/Opportunities.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/settings/Settings.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/style-guide/StyleGuide.tsx"
+      ],
+      "exports": [
+        "PageHeader"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 34,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": false,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "StatCard",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/shared/StatCard.tsx",
+      "relativePath": "components/shared/StatCard.tsx",
+      "category": "other",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/dashboard/Dashboard.tsx"
+      ],
+      "exports": [
+        "StatCard"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 49,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": false,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": true,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "StatusChip",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/shared/StatusChip.tsx",
+      "relativePath": "components/shared/StatusChip.tsx",
+      "category": "other",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/onboarding/components/ValidationDashboard.tsx"
+      ],
+      "exports": [
+        "StatusChip"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 43,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": false,
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "migrated",
+      "usesDesignTokens": true,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "TestCard",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/TestCard/TestCard.tsx",
+      "relativePath": "components/TestCard/TestCard.tsx",
+      "category": "other",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "TestCardProps",
+        "TestCard"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 31,
+      "complexity": "simple",
+      "dependencies": [
+        "@/lib/utils",
+        "@/components/ui/card"
+      ],
+      "isReusable": false,
+      "usesMUI": false,
+      "usesCustomUI": true,
+      "isDemo": false,
+      "migrationStatus": "not_migrated",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "accordion",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/accordion.tsx",
+      "relativePath": "components/ui/accordion.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/accordion.stories.tsx"
+      ],
+      "exports": [
+        "Accordion",
+        "AccordionItem",
+        "AccordionTrigger",
+        "AccordionContent"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 58,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "alert-dialog",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/alert-dialog.tsx",
+      "relativePath": "components/ui/alert-dialog.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/alert-dialog.stories.tsx"
+      ],
+      "exports": [
+        "AlertDialog",
+        "AlertDialogPortal",
+        "AlertDialogOverlay",
+        "AlertDialogTrigger",
+        "AlertDialogContent",
+        "AlertDialogHeader",
+        "AlertDialogFooter",
+        "AlertDialogTitle",
+        "AlertDialogDescription",
+        "AlertDialogAction",
+        "AlertDialogCancel"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 137,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils",
+        "./button"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "alert",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/alert.tsx",
+      "relativePath": "components/ui/alert.tsx",
+      "category": "ui",
+      "usageCount": 3,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/alert.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/auth/Login.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/auth/Register.tsx"
+      ],
+      "exports": [
+        "Alert",
+        "AlertTitle",
+        "AlertDescription"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 51,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": true,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "aspect-ratio",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/aspect-ratio.tsx",
+      "relativePath": "components/ui/aspect-ratio.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "AspectRatio"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 10,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "avatar",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/avatar.tsx",
+      "relativePath": "components/ui/avatar.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/avatar.stories.tsx"
+      ],
+      "exports": [
+        "Avatar",
+        "AvatarImage",
+        "AvatarFallback"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 32,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "badge",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/badge.tsx",
+      "relativePath": "components/ui/badge.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/badge.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/table.stories.tsx"
+      ],
+      "exports": [
+        "Badge",
+        "badgeVariants"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 34,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "breadcrumb",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/breadcrumb.tsx",
+      "relativePath": "components/ui/breadcrumb.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/breadcrumb.stories.tsx"
+      ],
+      "exports": [
+        "Breadcrumb",
+        "BreadcrumbList",
+        "BreadcrumbItem",
+        "BreadcrumbLink",
+        "BreadcrumbPage",
+        "BreadcrumbSeparator",
+        "BreadcrumbEllipsis"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 94,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "button",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/button.tsx",
+      "relativePath": "components/ui/button.tsx",
+      "category": "ui",
+      "usageCount": 20,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/alert-dialog.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/alert-dialog.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/button.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/calendar.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/card.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/carousel.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/collapsible.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/dialog.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/dropdown-menu.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/pagination.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/sheet.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/sidebar.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/tooltip.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/analysis/Analysis.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/analysis/AssetLibrary.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/auth/Login.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/auth/Register.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/ksc-generator/KSCGenerator.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/settings/Settings.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/style-guide/StyleGuide.tsx"
+      ],
+      "exports": [
+        "Button",
+        "buttonVariants"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 47,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "calendar",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/calendar.tsx",
+      "relativePath": "components/ui/calendar.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "Calendar"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 69,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils",
+        "./button"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "card",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/card.tsx",
+      "relativePath": "components/ui/card.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/card.stories.tsx"
+      ],
+      "exports": [
+        "Card",
+        "CardHeader",
+        "CardFooter",
+        "CardTitle",
+        "CardAction",
+        "CardDescription",
+        "CardContent"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 70,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "carousel",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/carousel.tsx",
+      "relativePath": "components/ui/carousel.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "CarouselApi",
+        "Carousel",
+        "CarouselContent",
+        "CarouselItem",
+        "CarouselPrevious",
+        "CarouselNext"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 202,
+      "complexity": "complex",
+      "dependencies": [
+        "./utils",
+        "./button"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "chart",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/chart.tsx",
+      "relativePath": "components/ui/chart.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/chart.stories.tsx"
+      ],
+      "exports": [
+        "ChartConfig",
+        "ChartContainer",
+        "ChartTooltip",
+        "ChartTooltipContent",
+        "ChartLegend",
+        "ChartLegendContent",
+        "ChartStyle"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 278,
+      "complexity": "complex",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "checkbox",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/checkbox.tsx",
+      "relativePath": "components/ui/checkbox.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/checkbox.stories.tsx"
+      ],
+      "exports": [
+        "Checkbox"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 21,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "collapsible",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/collapsible.tsx",
+      "relativePath": "components/ui/collapsible.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/collapsible.stories.tsx"
+      ],
+      "exports": [
+        "Collapsible",
+        "CollapsibleTrigger",
+        "CollapsibleContent"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 30,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "command",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/command.tsx",
+      "relativePath": "components/ui/command.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "Command",
+        "CommandDialog",
+        "CommandInput",
+        "CommandList",
+        "CommandEmpty",
+        "CommandGroup",
+        "CommandItem",
+        "CommandShortcut",
+        "CommandSeparator"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 134,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils",
+        "./dialog"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "context-menu",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/context-menu.tsx",
+      "relativePath": "components/ui/context-menu.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "ContextMenu",
+        "ContextMenuTrigger",
+        "ContextMenuContent",
+        "ContextMenuItem",
+        "ContextMenuCheckboxItem",
+        "ContextMenuRadioItem",
+        "ContextMenuLabel",
+        "ContextMenuSeparator",
+        "ContextMenuShortcut",
+        "ContextMenuGroup",
+        "ContextMenuPortal",
+        "ContextMenuSub",
+        "ContextMenuSubContent",
+        "ContextMenuSubTrigger",
+        "ContextMenuRadioGroup"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 232,
+      "complexity": "complex",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "dialog",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/dialog.tsx",
+      "relativePath": "components/ui/dialog.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/command.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/dialog.stories.tsx"
+      ],
+      "exports": [
+        "Dialog",
+        "DialogClose",
+        "DialogContent",
+        "DialogDescription",
+        "DialogFooter",
+        "DialogHeader",
+        "DialogOverlay",
+        "DialogPortal",
+        "DialogTitle",
+        "DialogTrigger"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 124,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "drawer",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/drawer.tsx",
+      "relativePath": "components/ui/drawer.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "Drawer",
+        "DrawerPortal",
+        "DrawerOverlay",
+        "DrawerTrigger",
+        "DrawerClose",
+        "DrawerContent",
+        "DrawerHeader",
+        "DrawerFooter",
+        "DrawerTitle",
+        "DrawerDescription"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 125,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "dropdown-menu",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/dropdown-menu.tsx",
+      "relativePath": "components/ui/dropdown-menu.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/dropdown-menu.stories.tsx"
+      ],
+      "exports": [
+        "DropdownMenu",
+        "DropdownMenuPortal",
+        "DropdownMenuTrigger",
+        "DropdownMenuContent",
+        "DropdownMenuGroup",
+        "DropdownMenuLabel",
+        "DropdownMenuItem",
+        "DropdownMenuCheckboxItem",
+        "DropdownMenuRadioGroup",
+        "DropdownMenuRadioItem",
+        "DropdownMenuSeparator",
+        "DropdownMenuShortcut",
+        "DropdownMenuSub",
+        "DropdownMenuSubTrigger",
+        "DropdownMenuSubContent"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 236,
+      "complexity": "complex",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "form",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/form.tsx",
+      "relativePath": "components/ui/form.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "useFormField",
+        "Form",
+        "FormItem",
+        "FormLabel",
+        "FormControl",
+        "FormDescription",
+        "FormMessage",
+        "FormField"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 126,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils",
+        "./label"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "hover-card",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/hover-card.tsx",
+      "relativePath": "components/ui/hover-card.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "HoverCard",
+        "HoverCardTrigger",
+        "HoverCardContent"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 39,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "icon-badge",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/icon-badge.tsx",
+      "relativePath": "components/ui/icon-badge.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/icon-badge.stories.tsx"
+      ],
+      "exports": [
+        "IconBadge"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 30,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "input-otp",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/input-otp.tsx",
+      "relativePath": "components/ui/input-otp.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "InputOTP",
+        "InputOTPGroup",
+        "InputOTPSlot",
+        "InputOTPSeparator"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 66,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "input",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/input.tsx",
+      "relativePath": "components/ui/input.tsx",
+      "category": "ui",
+      "usageCount": 5,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/input.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/sidebar.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/auth/Login.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/auth/Register.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/settings/Settings.tsx"
+      ],
+      "exports": [
+        "Input"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 16,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "keyword-tag",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/keyword-tag.tsx",
+      "relativePath": "components/ui/keyword-tag.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "KeywordTag"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 20,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "label",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/label.tsx",
+      "relativePath": "components/ui/label.tsx",
+      "category": "ui",
+      "usageCount": 4,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/checkbox.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/form.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/input.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/switch.stories.tsx"
+      ],
+      "exports": [
+        "Label"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 14,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "menubar",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/menubar.tsx",
+      "relativePath": "components/ui/menubar.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "Menubar",
+        "MenubarPortal",
+        "MenubarMenu",
+        "MenubarTrigger",
+        "MenubarContent",
+        "MenubarGroup",
+        "MenubarSeparator",
+        "MenubarLabel",
+        "MenubarItem",
+        "MenubarShortcut",
+        "MenubarCheckboxItem",
+        "MenubarRadioGroup",
+        "MenubarRadioItem",
+        "MenubarSub",
+        "MenubarSubTrigger",
+        "MenubarSubContent"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 254,
+      "complexity": "complex",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "metric-card",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/metric-card.tsx",
+      "relativePath": "components/ui/metric-card.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/layouts/Layout.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/metric-card.stories.tsx"
+      ],
+      "exports": [
+        "MetricCard"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 35,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": true,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "navigation-menu",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/navigation-menu.tsx",
+      "relativePath": "components/ui/navigation-menu.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "NavigationMenu",
+        "NavigationMenuList",
+        "NavigationMenuItem",
+        "NavigationMenuContent",
+        "NavigationMenuTrigger",
+        "NavigationMenuLink",
+        "NavigationMenuIndicator",
+        "NavigationMenuViewport",
+        "navigationMenuTriggerStyle"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 145,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": true,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "page-header",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/page-header.tsx",
+      "relativePath": "components/ui/page-header.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "PageHeader"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 26,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "pagination",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/pagination.tsx",
+      "relativePath": "components/ui/pagination.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "Pagination",
+        "PaginationContent",
+        "PaginationLink",
+        "PaginationItem",
+        "PaginationPrevious",
+        "PaginationNext",
+        "PaginationEllipsis"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 97,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils",
+        "./button"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "popover",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/popover.tsx",
+      "relativePath": "components/ui/popover.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "Popover",
+        "PopoverTrigger",
+        "PopoverContent",
+        "PopoverAnchor"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 47,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "progress",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/progress.tsx",
+      "relativePath": "components/ui/progress.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/progress.stories.tsx"
+      ],
+      "exports": [
+        "Progress"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 21,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "radio-group",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/radio-group.tsx",
+      "relativePath": "components/ui/radio-group.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "RadioGroup",
+        "RadioGroupItem"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 36,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "resizable",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/resizable.tsx",
+      "relativePath": "components/ui/resizable.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "ResizablePanelGroup",
+        "ResizablePanel",
+        "ResizableHandle"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 43,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "scroll-area",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/scroll-area.tsx",
+      "relativePath": "components/ui/scroll-area.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "ScrollArea",
+        "ScrollBar"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 48,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "select",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/select.tsx",
+      "relativePath": "components/ui/select.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/select.stories.tsx"
+      ],
+      "exports": [
+        "Select",
+        "SelectContent",
+        "SelectGroup",
+        "SelectItem",
+        "SelectLabel",
+        "SelectScrollDownButton",
+        "SelectScrollUpButton",
+        "SelectSeparator",
+        "SelectTrigger",
+        "SelectValue"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 168,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": true,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "separator",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/separator.tsx",
+      "relativePath": "components/ui/separator.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/separator.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/sidebar.tsx"
+      ],
+      "exports": [
+        "Separator"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 21,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "sheet",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/sheet.tsx",
+      "relativePath": "components/ui/sheet.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/sheet.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/sidebar.tsx"
+      ],
+      "exports": [
+        "Sheet",
+        "SheetTrigger",
+        "SheetClose",
+        "SheetContent",
+        "SheetHeader",
+        "SheetFooter",
+        "SheetTitle",
+        "SheetDescription"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 133,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "sidebar",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/sidebar.tsx",
+      "relativePath": "components/ui/sidebar.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "Sidebar",
+        "SidebarContent",
+        "SidebarFooter",
+        "SidebarGroup",
+        "SidebarGroupAction",
+        "SidebarGroupContent",
+        "SidebarGroupLabel",
+        "SidebarHeader",
+        "SidebarInput",
+        "SidebarInset",
+        "SidebarMenu",
+        "SidebarMenuAction",
+        "SidebarMenuBadge",
+        "SidebarMenuButton",
+        "SidebarMenuItem",
+        "SidebarMenuSkeleton",
+        "SidebarMenuSub",
+        "SidebarMenuSubButton",
+        "SidebarMenuSubItem",
+        "SidebarProvider",
+        "SidebarRail",
+        "SidebarSeparator",
+        "SidebarTrigger",
+        "useSidebar"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 620,
+      "complexity": "complex",
+      "dependencies": [
+        "./use-mobile",
+        "./utils",
+        "./button",
+        "./input",
+        "./separator",
+        "./sheet",
+        "./skeleton",
+        "./tooltip"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": true,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "skeleton",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/skeleton.tsx",
+      "relativePath": "components/ui/skeleton.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/sidebar.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/skeleton.stories.tsx"
+      ],
+      "exports": [
+        "Skeleton"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 10,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "slider",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/slider.tsx",
+      "relativePath": "components/ui/slider.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/slider.stories.tsx"
+      ],
+      "exports": [
+        "Slider"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 50,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "sonner",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/sonner.tsx",
+      "relativePath": "components/ui/sonner.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "Toaster"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 19,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": true,
+      "usesThemeProvider": true,
+      "usesM3Components": false
+    },
+    {
+      "name": "stat-card",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/stat-card.tsx",
+      "relativePath": "components/ui/stat-card.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "StatCard"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 44,
+      "complexity": "simple",
+      "dependencies": [],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": true,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "switch",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/switch.tsx",
+      "relativePath": "components/ui/switch.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/switch.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/settings/Settings.tsx"
+      ],
+      "exports": [
+        "Switch"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 21,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "table",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/table.tsx",
+      "relativePath": "components/ui/table.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/table.stories.tsx"
+      ],
+      "exports": [
+        "Table",
+        "TableHeader",
+        "TableBody",
+        "TableFooter",
+        "TableHead",
+        "TableRow",
+        "TableCell",
+        "TableCaption"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 88,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "tabs",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/tabs.tsx",
+      "relativePath": "components/ui/tabs.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/tabs.stories.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/settings/Settings.tsx"
+      ],
+      "exports": [
+        "Tabs",
+        "TabsList",
+        "TabsTrigger",
+        "TabsContent"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 44,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "textarea",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/textarea.tsx",
+      "relativePath": "components/ui/textarea.tsx",
+      "category": "ui",
+      "usageCount": 3,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/analysis/Analysis.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/ksc-generator/KSCGenerator.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/settings/Settings.tsx"
+      ],
+      "exports": [
+        "Textarea"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 13,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "toggle-group",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/toggle-group.tsx",
+      "relativePath": "components/ui/toggle-group.tsx",
+      "category": "ui",
+      "usageCount": 0,
+      "importedBy": [],
+      "exports": [
+        "ToggleGroup",
+        "ToggleGroupItem"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 57,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils",
+        "./toggle"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "toggle",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/toggle.tsx",
+      "relativePath": "components/ui/toggle.tsx",
+      "category": "ui",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/toggle-group.tsx"
+      ],
+      "exports": [
+        "Toggle",
+        "toggleVariants"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 36,
+      "complexity": "simple",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "tooltip",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/tooltip.tsx",
+      "relativePath": "components/ui/tooltip.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/sidebar.tsx",
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/tooltip.stories.tsx"
+      ],
+      "exports": [
+        "Tooltip",
+        "TooltipTrigger",
+        "TooltipContent",
+        "TooltipProvider"
+      ],
+      "hasTests": false,
+      "hasStories": true,
+      "hasDocs": false,
+      "linesOfCode": 55,
+      "complexity": "medium",
+      "dependencies": [
+        "./utils"
+      ],
+      "isReusable": true,
+      "usesMUI": false,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "unknown",
+      "usesDesignTokens": false,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    },
+    {
+      "name": "ValidationDashboard",
+      "path": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/features/onboarding/components/ValidationDashboard.tsx",
+      "relativePath": "features/onboarding/components/ValidationDashboard.tsx",
+      "category": "other",
+      "usageCount": 1,
+      "importedBy": [
+        "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/pages/IngestionPage.tsx"
+      ],
+      "exports": [
+        "ValidationDashboard"
+      ],
+      "hasTests": false,
+      "hasStories": false,
+      "hasDocs": false,
+      "linesOfCode": 484,
+      "complexity": "complex",
+      "dependencies": [
+        "../../../types/api",
+        "../../../components/shared/EditableField",
+        "../../../components/shared/StatusChip"
+      ],
+      "isReusable": false,
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "isDemo": false,
+      "migrationStatus": "migrated",
+      "usesDesignTokens": true,
+      "usesThemeProvider": false,
+      "usesM3Components": false
+    }
+  ],
+  "unusedComponents": [
+    "components/figma/ImageWithFallback.tsx",
+    "components/shared/IconBadge.tsx",
+    "components/TestCard/TestCard.tsx",
+    "components/ui/aspect-ratio.tsx",
+    "components/ui/calendar.tsx",
+    "components/ui/carousel.tsx",
+    "components/ui/command.tsx",
+    "components/ui/context-menu.tsx",
+    "components/ui/drawer.tsx",
+    "components/ui/form.tsx",
+    "components/ui/hover-card.tsx",
+    "components/ui/input-otp.tsx",
+    "components/ui/keyword-tag.tsx",
+    "components/ui/menubar.tsx",
+    "components/ui/navigation-menu.tsx",
+    "components/ui/page-header.tsx",
+    "components/ui/pagination.tsx",
+    "components/ui/popover.tsx",
+    "components/ui/radio-group.tsx",
+    "components/ui/resizable.tsx",
+    "components/ui/scroll-area.tsx",
+    "components/ui/sidebar.tsx",
+    "components/ui/sonner.tsx",
+    "components/ui/stat-card.tsx",
+    "components/ui/toggle-group.tsx",
+    "components/electric/tabs/ElectricTabs.tsx"
+  ],
+  "mostUsedComponents": [
+    {
+      "name": "button",
+      "count": 20
+    },
+    {
+      "name": "PageHeader",
+      "count": 7
+    },
+    {
+      "name": "input",
+      "count": 5
+    },
+    {
+      "name": "label",
+      "count": 4
+    },
+    {
+      "name": "alert",
+      "count": 3
+    },
+    {
+      "name": "textarea",
+      "count": 3
+    },
+    {
+      "name": "KeywordTag",
+      "count": 2
+    },
+    {
+      "name": "badge",
+      "count": 2
+    },
+    {
+      "name": "dialog",
+      "count": 2
+    },
+    {
+      "name": "metric-card",
+      "count": 2
+    }
+  ],
+  "recommendations": [
+    "65 components lack test coverage. Consider adding tests for: button, PageHeader, input, label, alert...",
+    "25 reusable components lack Storybook stories. Consider documenting: label, textarea, toggle, aspect-ratio, calendar...",
+    "26 components appear unused. Consider archiving or removing them.",
+    "7 components are marked as complex (>200 LOC or >10 dependencies). Consider refactoring: chart, dropdown-menu, ValidationDashboard, carousel, context-menu...",
+    "1 components still use custom UI only. Migrate to Material UI components: TestCard",
+    "M3 Expressive Adoption: 0.0% (0/65) fully adopted. Target: 80%+ for complete M3 Expressive migration."
+  ],
+  "migrationSummary": {
+    "migrated": 3,
+    "mixed": 0,
+    "not_migrated": 1,
+    "expressive": 0,
+    "unknown": 61
+  },
+  "m3ExpressiveAdoption": {
+    "withDesignTokens": 12,
+    "withThemeProvider": 1,
+    "withM3Components": 0,
+    "fullyExpressive": 0
+  }
+}

@@ -1,0 +1,56 @@
+{
+    "version": "2.0",
+    "phase3_stack": {
+        "tier1_agents": [
+            "design-system-validator",
+            "mcp-orchestrator",
+            "testing-specialist"
+        ],
+        "tier1_skills": [
+            "token-orchestrator",
+            "batch-migration-orchestrator",
+            "m3-anti-slop-validator",
+            "m3-aesthetic-creator",
+            "jest-test-scaffolder"
+        ],
+        "tier2_agents": [
+            "visual-design-director",
+            "design-project-manager",
+            "fullstack-integration-specialist"
+        ],
+        "tier2_skills": [
+            "m3-expressive-audit",
+            "m3-layout-geometry-validator",
+            "m3-spring-motion-choreography",
+            "task-delegator"
+        ],
+        "recommended_enhancements": [
+            {
+                "target": "batch-migration-orchestrator",
+                "enhancement": "Add Token Orchestrator integration",
+                "effort": "1-2 hrs",
+                "priority": "P1"
+            },
+            {
+                "target": "m3-anti-slop-validator",
+                "enhancement": "Add Northcote Curio pattern detection",
+                "effort": "1 hr",
+                "priority": "P4"
+            }
+        ],
+        "recommended_new_skills": [
+            {
+                "name": "component-transformation-coordinator",
+                "purpose": "Unify Token Orch → Migration → Validation → Testing",
+                "effort": "4-6 hrs",
+                "priority": "P2"
+            },
+            {
+                "name": "design-compliance-dashboard",
+                "purpose": "Real-time tracking of 79 components across validators",
+                "effort": "3-4 hrs",
+                "priority": "P3"
+            }
+        ]
+    }
+}

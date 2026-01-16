@@ -1,0 +1,135 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables (CRITICAL: NEVER commit these)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+.env.staging
+backend/.env
+backend/.env.*
+backend/.env.local
+backend/.env.development
+frontend/.env.production
+frontend/.env.staging
+
+# Firebase service account keys (CRITICAL: NEVER commit these)
+*-service-account-key.json
+service-account-*.json
+service-account.json
+backend/service-account.json
+*_key.json
+*-key.json
+firebase-adminsdk-*.json
+firebase-prod-key.json
+firebase-staging-key.json
+
+# Duplicate careercopilot directory (to be deleted)
+/careercopilot/
+
+# Build outputs
+dist/
+build/
+.cache/
+.next/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Firebase
+.firebase/
+
+# Logs
+logs/
+*.log
+
+# Coverage
+htmlcov/
+.coverage
+
+# Backup directories
+frontend-pre-migration-backup/
+frontend-broken/
+coverage/
+.nyc_output
+
+# Temporary folders
+tmp/
+temp/
+.tmp.driveupload/
+
+# Cache directories
+.eslintcache
+.npm
+.rpt2_cache/
+.tsbuildinfo
+.yarn/install-state.gz
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+careercopilot/frontend/.env
+
+# Generated frontend assets
+public/assets/
+/Applications/careercopilot/backend/firebase-prod-key.json
+.env.production
+
+# Ignore backup directories created by cleanup script
+cleanup_backup_*
+!.env.example
+*.db
+*.zip
+*.html
+cleanup_backup_*/
+/backend/data/
+/frontend/test-results/
+.frontend-coverage/
+/frontend/playwright-report/
+.env.aws-ses
+
+*storybook.log
+storybook-static
+frontend/Figma UI Files/
+.claude-backup-*.tar.gz
+*.bak.*
+claude-artifact-runner/
+
+# Jules Delegation Protocol Output Reports
+/.ai_reports/
+.archive_legacy/
+.venv/
+test-results/
+
+# Local Environments and Logs
+backend/venv/
+*.txt
+*.xml
+playwright-report/
+test-results/
+
+
+# Legacy Archive (Pre-Flight Cleanup)
+# Legacy Archive (Pre-Flight Cleanup)
+_legacy_archive/
+_archive_legacy/
+credentials.json
+
+# Agent Directories
+.gemini/
+.antigravity/
+.claude/

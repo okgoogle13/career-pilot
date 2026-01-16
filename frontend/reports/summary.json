@@ -1,0 +1,347 @@
+{
+  "generatedAt": "2025-11-17T16:01:27.245Z",
+  "totalComponents": 127,
+  "nonDemoCount": 127,
+  "migrationSummary": {
+    "migrated": 89,
+    "mixed": 10,
+    "not_migrated": 0,
+    "expressive": 27,
+    "unknown": 1
+  },
+  "topEssential": [
+    {
+      "name": "badge",
+      "path": "components/ui/badge.tsx",
+      "category": "ui",
+      "usageCount": 15,
+      "migrationStatus": "expressive",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": true,
+      "hasStories": false
+    },
+    {
+      "name": "card",
+      "path": "components/ui/card.tsx",
+      "category": "ui",
+      "usageCount": 8,
+      "migrationStatus": "expressive",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": true,
+      "hasStories": false
+    },
+    {
+      "name": "input",
+      "path": "components/ui/input.tsx",
+      "category": "ui",
+      "usageCount": 6,
+      "migrationStatus": "expressive",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": true,
+      "hasStories": false
+    },
+    {
+      "name": "textarea",
+      "path": "components/ui/textarea.tsx",
+      "category": "ui",
+      "usageCount": 5,
+      "migrationStatus": "expressive",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "label",
+      "path": "components/ui/label.tsx",
+      "category": "ui",
+      "usageCount": 4,
+      "migrationStatus": "expressive",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "FilterPanel",
+      "path": "components/features/opportunities/FilterPanel.tsx",
+      "category": "features",
+      "usageCount": 3,
+      "migrationStatus": "migrated",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": true,
+      "hasStories": false
+    },
+    {
+      "name": "progress",
+      "path": "components/ui/progress.tsx",
+      "category": "ui",
+      "usageCount": 3,
+      "migrationStatus": "expressive",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "alert-dialog",
+      "path": "components/ui/alert-dialog.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "migrationStatus": "migrated",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": true,
+      "hasStories": false
+    },
+    {
+      "name": "button",
+      "path": "components/ui/button.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "migrationStatus": "expressive",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "Button",
+      "path": "components/ui/Button/Button.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "migrationStatus": "migrated",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": true,
+      "hasStories": true
+    },
+    {
+      "name": "checkbox",
+      "path": "components/ui/checkbox.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "migrationStatus": "migrated",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": true,
+      "hasStories": false
+    },
+    {
+      "name": "dialog",
+      "path": "components/ui/dialog.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "migrationStatus": "expressive",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "Toast",
+      "path": "components/ui/feedback/Toast.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "migrationStatus": "migrated",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "LoadingSpinner",
+      "path": "components/ui/loading/LoadingSpinner.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "migrationStatus": "migrated",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "separator",
+      "path": "components/ui/separator.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "migrationStatus": "expressive",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "switch",
+      "path": "components/ui/switch.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "migrationStatus": "migrated",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "tabs",
+      "path": "components/ui/tabs.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "migrationStatus": "migrated",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "tooltip",
+      "path": "components/ui/tooltip.tsx",
+      "category": "ui",
+      "usageCount": 2,
+      "migrationStatus": "migrated",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "ATSAnalysisDashboard",
+      "path": "components/features/Analysis/ATSAnalysisDashboard.tsx",
+      "category": "features",
+      "usageCount": 1,
+      "migrationStatus": "migrated",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "Auth",
+      "path": "components/features/auth/Auth.tsx",
+      "category": "features",
+      "usageCount": 1,
+      "migrationStatus": "migrated",
+      "usesMUI": true,
+      "usesCustomUI": false,
+      "hasTests": true,
+      "hasStories": false
+    }
+  ],
+  "topNotMigrated": [],
+  "topMixed": [
+    {
+      "name": "CardComponentsSection",
+      "path": "components/library/CardComponentsSection.tsx",
+      "category": "library",
+      "usageCount": 1,
+      "migrationStatus": "mixed",
+      "usesMUI": true,
+      "usesCustomUI": true,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "DisplayComponentsSection",
+      "path": "components/library/DisplayComponentsSection.tsx",
+      "category": "library",
+      "usageCount": 1,
+      "migrationStatus": "mixed",
+      "usesMUI": true,
+      "usesCustomUI": true,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "FormComponentsSection",
+      "path": "components/library/FormComponentsSection.tsx",
+      "category": "library",
+      "usageCount": 1,
+      "migrationStatus": "mixed",
+      "usesMUI": true,
+      "usesCustomUI": true,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "InteractiveComponentsSection",
+      "path": "components/library/InteractiveComponentsSection.tsx",
+      "category": "library",
+      "usageCount": 1,
+      "migrationStatus": "mixed",
+      "usesMUI": true,
+      "usesCustomUI": true,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "LayoutComponentsSection",
+      "path": "components/library/LayoutComponentsSection.tsx",
+      "category": "library",
+      "usageCount": 1,
+      "migrationStatus": "mixed",
+      "usesMUI": true,
+      "usesCustomUI": true,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "ProfileVariationCard",
+      "path": "components/library/ProfileVariationCard.tsx",
+      "category": "library",
+      "usageCount": 1,
+      "migrationStatus": "mixed",
+      "usesMUI": true,
+      "usesCustomUI": true,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "JobSearch",
+      "path": "components/career/JobSearch.tsx",
+      "category": "other",
+      "usageCount": 0,
+      "migrationStatus": "mixed",
+      "usesMUI": true,
+      "usesCustomUI": true,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "KeywordTag",
+      "path": "components/library/KeywordTag.tsx",
+      "category": "library",
+      "usageCount": 0,
+      "migrationStatus": "mixed",
+      "usesMUI": true,
+      "usesCustomUI": true,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "TemplateCard",
+      "path": "components/library/TemplateCard.tsx",
+      "category": "library",
+      "usageCount": 0,
+      "migrationStatus": "mixed",
+      "usesMUI": true,
+      "usesCustomUI": true,
+      "hasTests": false,
+      "hasStories": false
+    },
+    {
+      "name": "JobSearchStatus",
+      "path": "components/main/JobSearchStatus.tsx",
+      "category": "main",
+      "usageCount": 0,
+      "migrationStatus": "mixed",
+      "usesMUI": true,
+      "usesCustomUI": true,
+      "hasTests": false,
+      "hasStories": false
+    }
+  ]
+}

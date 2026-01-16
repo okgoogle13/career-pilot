@@ -1,0 +1,6 @@
+{
+    "_comment": "@deprecated LEGACY_THEME - DO NOT USE. Use src/theme/tokens.json and src/theme/design-tokens.css",
+    "name": "Northcote Curio (Deprecated)",
+    "version": "0.0.0-deprecated",
+    "theme": {}
+}
