@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { motion } from 'framer-motion';
+import { motion, type HTMLMotionProps } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { useMode } from '@/hooks/use-mode';
 
-interface TechCardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface TechCardProps extends Omit<HTMLMotionProps<'div'>, 'ref'> {
     title: string;
     description?: string;
     icon?: React.ReactNode;

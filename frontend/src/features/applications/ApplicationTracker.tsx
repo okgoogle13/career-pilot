@@ -98,7 +98,7 @@ export function ApplicationTracker() {
         {/* Applications List - TechCard Rows */}
         <div className="space-y-4">
           {APPLICATIONS.map((app) => (
-            <TechCard key={app.id} className="p-0">
+            <TechCard key={app.id} title="Application" className="p-0">
               <ApplicationCard
                 title={app.title}
                 company={app.company}

@@ -180,6 +180,9 @@ export function Analysis() {
     }
 
     try {
+      if (!user.getIdToken) {
+        throw new Error('Missing auth token provider');
+      }
       const token = await user.getIdToken();
 
       toast.promise(
@@ -408,7 +411,7 @@ export function Analysis() {
         </div>
 
         {/* ATS Score Over Time - TechCard wrapper */}
-        <TechCard className="mb-8 p-6">
+        <TechCard className="mb-8 p-6" title="ATS Score Over Time">
           <h3 className="text-title-large font-bold mb-4">ATS Score Over Time</h3>
           <ResponsiveContainer
             width="100%"
@@ -454,7 +457,7 @@ export function Analysis() {
         {/* Bottom Row: Application Status + Keyword Match Rate */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           {/* Application Status Donut Chart - TechCard */}
-          <TechCard className="p-6">
+          <TechCard className="p-6" title="Application Status">
             <h3 className="text-title-large font-bold mb-4">Application Status</h3>
             <ResponsiveContainer
               width="100%"
@@ -492,7 +495,7 @@ export function Analysis() {
           </TechCard>
 
           {/* Keyword Match Rate Bar Chart - TechCard */}
-          <TechCard className="p-6">
+          <TechCard className="p-6" title="Keyword Match Rate">
             <h3 className="text-title-large font-bold mb-4">Keyword Match Rate</h3>
             <ResponsiveContainer
               width="100%"

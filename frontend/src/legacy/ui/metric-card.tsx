@@ -1,2 +1,2 @@
 // Re-export MetricCard from shared components
-export { MetricCard } from '../shared/MetricCard';
+export { MetricCard } from '../../components/shared/MetricCard';

@@ -175,7 +175,7 @@ export function KSCGenerator() {
             <div className="flex justify-between pt-4">
               <NorthcoteButton
                 onClick={handleBack}
-                variant="text"
+                variant="tertiary"
                 className="text-on-surface-variant hover:text-on-surface rounded-pebble px-6"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" /> Back
@@ -202,7 +202,7 @@ export function KSCGenerator() {
               <div className="flex gap-2">
                 <NorthcoteButton
                   onClick={resetForm}
-                  variant="text"
+                  variant="tertiary"
                   className="text-on-surface-variant hover:text-error rounded-pebble"
                 >
                   <RefreshCw className="w-4 h-4 mr-2" /> New

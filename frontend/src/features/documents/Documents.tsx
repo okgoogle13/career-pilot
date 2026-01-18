@@ -1,8 +1,13 @@
-import { useState } from 'react';
-import { Search, FileText, Calendar, Download } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Search, FileText, Calendar, Download, Lock, ChevronRight } from 'lucide-react';
 import { exportToPdf } from '../../utils/exportEngine';
 import snakePlant from '../../assets/images/snake-plant.png';
 import { PageHeader } from '../../components/shared/PageHeader';
+import { useAuth } from '../../context/AuthContext';
+import { db } from '../../config/firebase';
+import { doc, getDoc } from 'firebase/firestore';
+import { useNavigate } from 'react-router-dom';
+import { NorthcoteButton } from '../../components/ui/NorthcoteButton';
 
 // ============================================================================
 // TYPE DEFINITIONS
@@ -98,23 +103,6 @@ function filterDocuments(documents: Document[], tab: DocumentTab): Document[] {
 
   return documents.filter((doc) => doc.type === typeMap[tab as keyof typeof typeMap]);
 }
-
-// ============================================================================
-// COMPONENT
-// ============================================================================
-
-import { useEffect, useState } from 'react';
-import { Search, FileText, Calendar, Download, Lock, ChevronRight } from 'lucide-react';
-import { exportToPdf } from '../../utils/exportEngine';
-import snakePlant from '../../assets/images/snake-plant.png';
-import { PageHeader } from '../../components/shared/PageHeader';
-import { useAuth } from '../../context/AuthContext';
-import { db } from '../../config/firebase';
-import { doc, getDoc } from 'firebase/firestore';
-import { useNavigate } from 'react-router-dom';
-import { NorthcoteButton } from '../../components/ui/NorthcoteButton';
-
-// ... (existing helper and type definitions)
 
 // ============================================================================
 // COMPONENT

@@ -1,9 +1,9 @@
 {
     "mcpServers": {
         "flash-sidekick": {
-            "command": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/.venv/bin/python3",
+            "command": "/Users/okgoogle13/.pyenv/versions/3.12.3/bin/python3",
             "args": [
-                "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/servers/flash_sidekick.py"
+                "/Users/okgoogle13/Desktop/careercopilot/servers/flash_sidekick.py"
             ],
             "env": {
                 "GEMINI_MODEL": "models/gemini-2.5-flash-lite",
@@ -22,9 +22,9 @@
             "autoApprove": []
         },
         "docker": {
-            "command": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/.venv/bin/python3",
+            "command": "/Users/okgoogle13/.pyenv/versions/3.12.3/bin/python3",
             "args": [
-                "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/servers/docker_mcp.py"
+                "/Users/okgoogle13/Desktop/careercopilot/servers/docker_mcp.py"
             ],
             "disabled": false,
             "autoApprove": []
@@ -34,7 +34,7 @@
             "args": [
                 "-y",
                 "@modelcontextprotocol/server-filesystem",
-                "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar"
+                "/Users/okgoogle13/Desktop/careercopilot"
             ],
             "disabled": false,
             "autoApprove": []

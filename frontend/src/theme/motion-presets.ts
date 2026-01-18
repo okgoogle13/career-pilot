@@ -255,7 +255,8 @@ export const getVariants = (variants: Variants): Variants => {
     if (prefersReducedMotion()) {
         // Disable transforms, keep only opacity
         return Object.entries(variants).reduce((acc, [key, value]) => {
-            acc[key] = { opacity: value.opacity ?? 1 };
+            const entry = value as { opacity?: number };
+            acc[key] = { opacity: entry.opacity ?? 1 };
             return acc;
         }, {} as Variants);
     }

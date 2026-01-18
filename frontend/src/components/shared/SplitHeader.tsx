@@ -4,19 +4,27 @@ import { cn } from '@/lib/utils';
 import { useMode } from '@/hooks/use-mode';
 
 interface SplitHeaderProps {
-    trunkText: string;
-    vineText: string;
+    trunkText?: string;
+    vineText?: string;
+    title?: string;
+    highlight?: string;
     subtitle?: string;
     alignment?: 'left' | 'center' | 'right';
+    className?: string;
 }
 
 const SplitHeader: React.FC<SplitHeaderProps> = ({
     trunkText,
     vineText,
+    title,
+    highlight,
     subtitle,
     alignment = 'left',
+    className,
 }) => {
     const { mode } = useMode();
+    const trunk = trunkText ?? title ?? '';
+    const vine = vineText ?? highlight ?? '';
 
     const alignmentClasses = {
         left: 'text-left items-start',
@@ -25,7 +33,7 @@ const SplitHeader: React.FC<SplitHeaderProps> = ({
     };
 
     return (
-        <div className={cn('flex flex-col gap-2', alignmentClasses[alignment])}>
+        <div className={cn('flex flex-col gap-2', alignmentClasses[alignment], className)}>
             {/* Banksia Composition - Proclamation + Bloom */}
             <div className="relative inline-block">
                 {/* Bottom Layer: Proclamation (Libre Bodoni) */}
@@ -39,7 +47,7 @@ const SplitHeader: React.FC<SplitHeaderProps> = ({
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: [0.25, 0.4, 0.55, 1.4] }}
                 >
-                    {trunkText}
+                    {trunk}
                 </motion.h1>
 
                 {/* Top Layer: Bloom (Fraunces with WONK) */}
@@ -70,7 +78,7 @@ const SplitHeader: React.FC<SplitHeaderProps> = ({
                         damping: 15
                     }}
                 >
-                    {vineText}
+                    {vine}
                 </motion.span>
             </div>
 

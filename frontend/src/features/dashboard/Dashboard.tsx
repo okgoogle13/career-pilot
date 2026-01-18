@@ -75,7 +75,7 @@ export function Dashboard() {
         className="relative z-10 p-6 md:p-12"
       >
         {/* Hero Banner with TechCard and SplitHeader */}
-        <TechCard className="p-8 md:p-12 mb-8 relative overflow-hidden min-h-[280px]">
+        <TechCard title="Daily Overview" className="p-8 md:p-12 mb-8 relative overflow-hidden min-h-[280px]">
           <motion.div variants={item} className="relative z-10">
             <SplitHeader title="GOOD MORNING," highlight="Nishant!" />
             <p className="text-white/70 mt-4 text-lg">

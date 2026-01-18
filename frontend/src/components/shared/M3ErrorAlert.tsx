@@ -1,5 +1,5 @@
 import { AlertCircle, RefreshCw } from 'lucide-react';
-import { M3Button } from '../ui/M3Button';
+import { NorthcoteButton } from '../ui/NorthcoteButton';
 
 interface ErrorAlertProps {
     message: string;
@@ -54,28 +54,26 @@ export function M3ErrorAlert({
             {(onRetry || onDismiss) && (
                 <div className="flex gap-2 flex-shrink-0">
                     {onRetry && (
-                        <M3Button
-                            variant="outlined"
-                            color="primary"
-                            size="small"
+                        <NorthcoteButton
+                            variant="secondary"
+                            size="sm"
                             startIcon={<RefreshCw className="w-4 h-4" />}
                             onClick={onRetry}
                             className="border-error text-on-error-container hover:bg-error/10"
                         >
                             {retryLabel}
-                        </M3Button>
+                        </NorthcoteButton>
                     )}
 
                     {onDismiss && (
-                        <M3Button
-                            variant="text"
-                            color="primary"
-                            size="small"
+                        <NorthcoteButton
+                            variant="tertiary"
+                            size="sm"
                             onClick={onDismiss}
                             className="text-on-error-container hover:bg-error/10"
                         >
                             Dismiss
-                        </M3Button>
+                        </NorthcoteButton>
                     )}
                 </div>
             )}

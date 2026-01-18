@@ -308,6 +308,7 @@ export interface M3TextAreaProps extends Omit<React.TextareaHTMLAttributes<HTMLT
     helperText?: string;
     error?: boolean;
     errorMessage?: string;
+    variant?: M3TextFieldVariant;
     size?: M3TextFieldSize;
     mode?: M3TextFieldMode;
     fullWidth?: boolean;

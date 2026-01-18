@@ -1,9 +1,9 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, type HTMLMotionProps } from 'framer-motion';
 import { cn } from '../../lib/utils';
 import { useMode } from '../../context/ModeContext';
 
-export interface NorthcoteButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface NorthcoteButtonProps extends Omit<HTMLMotionProps<'button'>, 'ref'> {
     variant?: 'primary' | 'secondary' | 'tertiary';
     size?: 'sm' | 'md' | 'lg';
     startIcon?: React.ReactNode;

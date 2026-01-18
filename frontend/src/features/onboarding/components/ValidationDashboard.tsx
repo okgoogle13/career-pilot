@@ -25,8 +25,8 @@ import { CareerDatabase, StructuredAchievement, KSCResponse } from '../../../typ
 import { EditableField } from '../../../components/shared/EditableField';
 import { StatusChip } from '../../../components/shared/StatusChip';
 import { GardenLayout } from '@/components/layouts/GardenLayout';
-import { AuroraHeader } from '../../legacy/ui/AuroraHeader';
-import { GlassLeafCard } from '../../features/gallery/components/GlassLeafCard';
+import { AuroraHeader } from '@/components/ui/AuroraHeader';
+import { GlassLeafCard } from '@/components/ui/GlassLeafCard';
 import { NativeAnchor } from '@/components/ui/NativeAnchor';
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 

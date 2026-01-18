@@ -313,7 +313,7 @@ export const ProfileCardMUI: React.FC<ProfileCardMUIProps> = ({
         }}
       >
         <NorthcoteButton
-          variant="text"
+          variant="secondary"
           onClick={onEdit}
           className="flex-1"
           style={{
@@ -330,7 +330,7 @@ export const ProfileCardMUI: React.FC<ProfileCardMUIProps> = ({
           Edit
         </NorthcoteButton>
         <NorthcoteButton
-          variant="text"
+          variant="tertiary"
           onClick={onDelete}
           className="flex-1"
           style={{

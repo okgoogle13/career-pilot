@@ -26,7 +26,7 @@ export interface LeafProps extends React.HTMLAttributes<HTMLDivElement> {
     * The semantic HTML tag to use.
     * Defaults to appropriate tag for role (h1, h2, p, code).
     */
-    as?: 'h1' | 'h2' | 'h3' | 'p' | 'span' | 'div';
+    as?: 'h1' | 'h2' | 'h3' | 'p' | 'span' | 'div' | 'code';
 }
 
 /**

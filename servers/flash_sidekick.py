@@ -75,13 +75,36 @@ class FlashSidekickServer:
         return None
 
     def _call_gemini(self, engine_type, prompt, sys_instruct=""):
-        model = self._get_model(self.pro_candidates if engine_type == "pro" else self.fast_candidates)
-        if not model: return {"content": "Error: Model unavailable."}
-        try:
-            full = f"System: {sys_instruct}\n\nUser: {prompt}"
-            resp = model.generate_content(full)
-            return {"content": resp.text if resp else "No response."}
-        except Exception as e: return {"content": f"Error: {str(e)}"}
+        # Select the initial candidate list based on engine type preference
+        if engine_type == "pro":
+            # Pro Tier: Gemini 3 Pro -> 2.5 Pro -> Exp
+            candidates = self.pro_candidates + self.fast_candidates
+        else:
+            # Fast Tier: Flash -> Pro (fallback)
+            candidates = self.fast_candidates + self.pro_candidates
+
+        last_error = None
+        
+        # Fallback Loop
+        for model_name in candidates:
+            try:
+                model = self._get_model([model_name]) # Get specific model
+                if not model: continue
+                
+                full = f"System: {sys_instruct}\n\nUser: {prompt}"
+                resp = model.generate_content(full)
+                
+                logger.info(f"Success with model: {model_name}")
+                return {"content": resp.text if resp else "No response."}
+                
+            except Exception as e:
+                error_str = str(e)
+                logger.warning(f"Failed with {model_name}: {error_str}")
+                last_error = error_str
+                # Check for specific quota errors if needed, but for now we fallback on ANY error
+                continue
+        
+        return {"content": f"All models failed. Last error: {last_error}"}
 
     # ========================================================================
     # DESIGN SYSTEM TOOLS (NEW)

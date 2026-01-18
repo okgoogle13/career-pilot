@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { SplitSquareHorizontal, Save, Sparkles, Wand2, ShieldCheck } from 'lucide-react';
-import { NorthcoteButton } from '../../components/ui/NorthcoteButton';
+import { NorthcoteButton } from '../../../components/ui/NorthcoteButton';
 import { scaffoldKSCResponse, STARInput } from '../logic';
 import { toast } from 'sonner';
 import { useAnalysis } from '@/hooks/useAnalysis';
@@ -28,11 +28,14 @@ export function SplitEditor({ activeTab, onTabChange, archetype }: SplitEditorPr
         }
 
         // Trigger Feature 3.2 Scoring
-        toast.promise(analyzeWithBackend(content), {
+        toast.promise(
+            analyzeWithBackend(content),
+            {
             loading: `Running ${archetype === 'gov' ? 'APS Capability' : 'Corporate Value'} Audit...`,
-            success: (data) => `Audit Complete: Score ${data.overallScore}%`,
+            success: (data) => `Audit Complete: Score ${data.score.overall}%`,
             error: 'Audit failed. Try again.'
-        });
+            }
+        );
     };
 
     // Handle Drop from Evidence Sidebar

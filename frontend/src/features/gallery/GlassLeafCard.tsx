@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { motion } from 'framer-motion';
+import { motion, type HTMLMotionProps } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { useMode } from '@/hooks/use-mode';
 
-interface GlassLeafCardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface GlassLeafCardProps extends Omit<HTMLMotionProps<'div'>, 'ref'> {
     children: React.ReactNode;
     intensity?: 'light' | 'medium' | 'heavy';
 }

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
-type NativeVariant = 'waratah' | 'bottlebrush' | 'banksia' | 'kangaroo' | 'gum';
-type AnchorPoint = 'hanging-left' | 'hanging-right' | 'floor-left' | 'floor-right' | 'center-stage';
+type NativeVariant = 'waratah' | 'bottlebrush' | 'banksia' | 'kangaroo' | 'gum' | 'fern';
+type AnchorPoint = 'hanging-left' | 'hanging-right' | 'floor-left' | 'floor-right' | 'center-stage' | 'ceiling-left';
 
 interface NativeAnchorProps {
     variant: NativeVariant;
@@ -19,6 +19,7 @@ const assets: Record<NativeVariant, string> = {
     banksia: '/assets/plants/native-banksia.png',
     kangaroo: '/assets/plants/native-kangaroo.png',
     gum: '/assets/plants/native-gum-hanging.png',
+    fern: '/src/assets/specimens/leaf-fern.png',
 };
 
 /**
@@ -49,7 +50,7 @@ export const NativeAnchor = ({
     className = ''
 }: NativeAnchorProps) => {
     // 1. Determine if plant is hanging or standing
-    const isHanging = variant === 'waratah' || variant === 'gum';
+    const isHanging = variant === 'waratah' || variant === 'gum' || variant === 'fern';
 
     // 2. Define physics-based animations
     const animations = {
@@ -79,6 +80,8 @@ export const NativeAnchor = ({
                 return { top: '-10%', left: '5%' };
             case 'hanging-right':
                 return { top: '-15%', right: '-5%' };
+            case 'ceiling-left':
+                return { top: '-20%', left: '-2%' };
             case 'floor-left':
                 return { bottom: '-5%', left: '-5%' };
             case 'floor-right':

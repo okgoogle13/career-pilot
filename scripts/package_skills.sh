@@ -1,5 +1,5 @@
 #!/bin/bash
-PROJECT_ROOT="/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar"
+PROJECT_ROOT="/Users/okgoogle13/Desktop/careercopilot"
 SKILLS_SRC="$PROJECT_ROOT/claude-config/skills"
 
 package_skill() {

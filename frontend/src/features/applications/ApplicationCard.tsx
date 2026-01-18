@@ -108,10 +108,10 @@ export function ApplicationCard({
   );
 }
 
-function getStatusVariant(status: string): 'primary' | 'secondary' | 'tertiary' | 'neutral' {
+function getStatusVariant(status: string): 'success' | 'warning' | 'info' | 'neutral' {
   const norm = status.toLowerCase();
-  if (norm.includes('offer') || norm.includes('accepted')) return 'tertiary'; // Celebration mode (Pink)
-  if (norm.includes('interview') || norm.includes('screening')) return 'secondary'; // Active progress (Teal)
-  if (norm.includes('applied')) return 'primary'; // Initial state (Indigo)
+  if (norm.includes('offer') || norm.includes('accepted')) return 'success';
+  if (norm.includes('interview') || norm.includes('screening')) return 'info';
+  if (norm.includes('applied')) return 'warning';
   return 'neutral';
 }

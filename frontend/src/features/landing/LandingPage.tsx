@@ -43,7 +43,7 @@ export function LandingPage(): React.ReactElement {
 
       {/* LAYER 2: Hero Card */}
       <div className="relative z-20 max-w-2xl w-full">
-        <TechCard className="text-center space-y-8 backdrop-blur-md bg-opacity-90">
+        <TechCard title="Career Copilot" className="text-center space-y-8 backdrop-blur-md bg-opacity-90">
           <SplitHeader
             trunkText="Career"
             vineText="Copilot"

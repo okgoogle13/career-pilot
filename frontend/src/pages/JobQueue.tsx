@@ -31,12 +31,12 @@ const statusConfig = {
     },
     ready_to_apply: {
         label: 'Ready to Apply',
-        variant: 'secondary' as const,
+        variant: 'info' as const,
         icon: CheckCircle,
     },
     applied: {
         label: 'Applied',
-        variant: 'primary' as const,
+        variant: 'success' as const,
         icon: CheckCircle,
     },
 };

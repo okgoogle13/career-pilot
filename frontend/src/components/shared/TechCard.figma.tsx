@@ -8,11 +8,12 @@ import { figma } from '@figma/code-connect';
  */
 figma.connect(TechCard, 'https://www.figma.com/file/IryuGDWixbuDc3RVhC6llE?node-id=NODE_ID', {
     props: {
+        title: figma.string('title'),
         content: figma.children('content'),
         className: figma.string('className'),
     },
     example: (props) => (
-        <TechCard className={props.className}>
+        <TechCard title={props.title || 'Tech Card'} className={props.className}>
             {props.content}
         </TechCard>
     ),

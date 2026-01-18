@@ -58,6 +58,10 @@ const buttonVariants = cva(
     }
 );
 
+export type M3ButtonVariant = NonNullable<VariantProps<typeof buttonVariants>['variant']>;
+export type M3ButtonSize = NonNullable<VariantProps<typeof buttonVariants>['size']>;
+export type M3ButtonColor = M3ButtonVariant;
+
 export interface M3ButtonProps
     extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
@@ -100,4 +104,47 @@ const M3Button = React.forwardRef<HTMLButtonElement, M3ButtonProps>(
 );
 M3Button.displayName = 'M3Button';
 
-export { M3Button, buttonVariants };
+export interface M3IconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    icon: React.ReactNode;
+    ariaLabel: string;
+    size?: 'small' | 'medium';
+    color?: 'primary' | 'secondary' | 'tertiary' | 'error' | 'warning' | 'info';
+}
+
+const iconButtonSizes = {
+    small: 'h-8 w-8 text-xs',
+    medium: 'h-10 w-10 text-sm',
+};
+
+const iconButtonColors: Record<NonNullable<M3IconButtonProps['color']>, string> = {
+    primary: 'text-primary-wattle-gold hover:bg-primary-wattle-gold/10',
+    secondary: 'text-secondary-flannel-flower hover:bg-secondary-flannel-flower/10',
+    tertiary: 'text-tertiary-waratah-crimson hover:bg-tertiary-waratah-crimson/10',
+    error: 'text-error hover:bg-error/10',
+    warning: 'text-warning hover:bg-warning/10',
+    info: 'text-primary-wattle-gold hover:bg-primary-wattle-gold/10',
+};
+
+const M3IconButton = React.forwardRef<HTMLButtonElement, M3IconButtonProps>(
+    ({ icon, ariaLabel, size = 'medium', color = 'primary', className, ...props }, ref) => {
+        return (
+            <button
+                ref={ref}
+                type="button"
+                aria-label={ariaLabel}
+                className={cn(
+                    'inline-flex items-center justify-center rounded-full transition-colors',
+                    iconButtonSizes[size],
+                    iconButtonColors[color],
+                    className
+                )}
+                {...props}
+            >
+                {icon}
+            </button>
+        );
+    }
+);
+M3IconButton.displayName = 'M3IconButton';
+
+export { M3Button, M3IconButton, buttonVariants };

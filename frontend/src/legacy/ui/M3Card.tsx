@@ -59,6 +59,10 @@ const cardVariants = cva(
     }
 );
 
+export type M3CardVariant = NonNullable<VariantProps<typeof cardVariants>['variant']>;
+export type M3CardElevation = 'none' | 'low' | 'medium' | 'high';
+export type M3CardPadding = 'none' | 'sm' | 'md' | 'lg';
+
 export interface M3CardProps
     extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof cardVariants> {
@@ -91,4 +95,29 @@ const M3Card = React.forwardRef<HTMLDivElement, M3CardProps>(
 );
 M3Card.displayName = 'M3Card';
 
-export { M3Card, cardVariants };
+export interface M3CardHeaderProps extends React.HTMLAttributes<HTMLDivElement> {}
+export interface M3CardContentProps extends React.HTMLAttributes<HTMLDivElement> {}
+export interface M3CardActionsProps extends React.HTMLAttributes<HTMLDivElement> {}
+
+const M3CardHeader = React.forwardRef<HTMLDivElement, M3CardHeaderProps>(
+    ({ className, ...props }, ref) => (
+        <div ref={ref} className={cn('mb-4 flex items-start gap-3', className)} {...props} />
+    )
+);
+M3CardHeader.displayName = 'M3CardHeader';
+
+const M3CardContent = React.forwardRef<HTMLDivElement, M3CardContentProps>(
+    ({ className, ...props }, ref) => (
+        <div ref={ref} className={cn('flex-1 text-sm', className)} {...props} />
+    )
+);
+M3CardContent.displayName = 'M3CardContent';
+
+const M3CardActions = React.forwardRef<HTMLDivElement, M3CardActionsProps>(
+    ({ className, ...props }, ref) => (
+        <div ref={ref} className={cn('mt-4 flex items-center gap-2', className)} {...props} />
+    )
+);
+M3CardActions.displayName = 'M3CardActions';
+
+export { M3Card, M3CardHeader, M3CardContent, M3CardActions, cardVariants };
