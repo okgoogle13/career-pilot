@@ -1,4 +1,4 @@
-import * as admin from "firebase-admin";
+import admin from "firebase-admin";
 import type { Request, Response, NextFunction } from "express";
 import { sendResponse } from "../utils/api.utils";
 import { AuthResponse } from "../types/api.types";

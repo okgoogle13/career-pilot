@@ -42,7 +42,7 @@
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "build:watch": "tsc -p tsconfig.build.json --watch",
     "test": "jest --passWithNoTests --detectOpenHandles --forceExit",
     "test:watch": "jest --watch --passWithNoTests",

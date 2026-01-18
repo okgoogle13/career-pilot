@@ -1,31 +1,23 @@
-import * as admin from 'firebase-admin';
-import * as functions from 'firebase-functions';
-import {genkit} from '@genkit-ai/core';
-import {onFlow} from '@genkit-ai/firebase';
-import {JobListingExtractor} from './services/job_listing_extractor';
+import admin from "firebase-admin";
+import functions from "firebase-functions";
+import type { CallableContext } from "firebase-functions/v1/https";
+import { JobListingExtractor } from "./services/job_listing_extractor";
+import type { JobListing } from "./types/job_listing";
 
 // Initialize Firebase Admin
 admin.initializeApp();
-
-// Configure Genkit
-genkit.configure({
-  plugins: [
-    // Add any Genkit plugins here
-  ],
-  logLevel: 'debug',
-});
 
 // Initialize services
 const jobListingExtractor = new JobListingExtractor();
 
 // Core services
-export {uploadAndTag} from "./uploadAndTag";
-export {extractAndSave} from "./extractAndSave";
-export {healthCheck} from "./healthCheck";
+export { uploadAndTag } from "./uploadAndTag";
+export { extractAndSave } from "./extractAndSave";
+export { healthCheck } from "./healthCheck";
 
 // Background processing functions
 export const enqueueJobProcessing = functions.https.onCall(
-  async (data: { source: string | { url: string } }, context) => {
+  async (data: { source: string | { url: string } }, context: CallableContext) => {
     // Verify authentication
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -114,7 +106,7 @@ export const processJobListing = functions.tasks
   });
 
 // Application API endpoints
-export { 
+export {
   createApplication,
   listApplications,
   getApplication,
@@ -124,18 +116,20 @@ export {
   addContact,
   scheduleInterview,
   getApplicationsByStatus,
-  exportApplications
-} from './api/applications.controller';
+  exportApplications,
+} from "./api/applications.controller";
 
 /**
  * Extract job listing from text or URL
  */
-export const extractJobListing = onFlow(
-  {
-    name: 'extractJobListing',
-    authPolicy: 'authenticated',
-  },
-  async (data: { source: string | { url: string } }, {_user}) => {
+export const extractJobListing = functions.https.onCall(
+  async (data: { source: string | { url: string } }, context: CallableContext) => {
+    if (!context.auth) {
+      throw new functions.https.HttpsError(
+        "unauthenticated",
+        "You must be logged in to extract job listings."
+      );
+    }
     try {
       const result = await jobListingExtractor.extract({
         source: data.source,
@@ -145,14 +139,10 @@ export const extractJobListing = onFlow(
           extractLocation: true,
         },
       });
-      return {success: true, data: result};
+      return { success: true, data: result };
     } catch (error) {
-      console.error('Error extracting job listing:', error);
-      throw new functions.https.HttpsError(
-        'internal',
-        'Failed to extract job listing',
-        error
-      );
+      console.error("Error extracting job listing:", error);
+      throw new functions.https.HttpsError("internal", "Failed to extract job listing", error);
     }
   }
 );
@@ -160,20 +150,22 @@ export const extractJobListing = onFlow(
 /**
  * Find similar job listings
  */
-export const findSimilarListings = onFlow(
-  {
-    name: 'findSimilarListings',
-    authPolicy: 'authenticated',
-  },
+export const findSimilarListings = functions.https.onCall(
   async (
-    data: { 
-      query: string | Record<string, unknown>;
+    data: {
+      query: string | JobListing;
       limit?: number;
       minScore?: number;
       filters?: Record<string, unknown>;
     },
-    {_user}
+    context: CallableContext
   ) => {
+    if (!context.auth) {
+      throw new functions.https.HttpsError(
+        "unauthenticated",
+        "You must be logged in to search similar listings."
+      );
+    }
     try {
       const results = await jobListingExtractor.findSimilar({
         query: data.query,
@@ -181,14 +173,10 @@ export const findSimilarListings = onFlow(
         minScore: data.minScore || 0.7,
         filters: data.filters || {},
       });
-      return {success: true, data: results};
+      return { success: true, data: results };
     } catch (error) {
-      console.error('Error finding similar listings:', error);
-      throw new functions.https.HttpsError(
-        'internal',
-        'Failed to find similar job listings',
-        error
-      );
+      console.error("Error finding similar listings:", error);
+      throw new functions.https.HttpsError("internal", "Failed to find similar job listings", error);
     }
   }
 );

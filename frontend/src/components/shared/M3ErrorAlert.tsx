@@ -1,5 +1,6 @@
 import { AlertCircle, RefreshCw } from 'lucide-react';
 import { NorthcoteButton } from '../ui/NorthcoteButton';
+import lizardWarning from '../../assets/specimens/motif-gallery-frillneck-warning.png';
 
 interface ErrorAlertProps {
     message: string;
@@ -17,6 +18,7 @@ interface ErrorAlertProps {
  * - Optional retry button for failed API calls
  * - Optional dismiss functionality
  * - Organic pebble shape (rounded-pebble)
+ * - **Thematic Motif:** Integrated "The Warning" (Frill-Necked Lizard)
  * 
  * @example
  * ```tsx
@@ -37,6 +39,7 @@ export function M3ErrorAlert({
     return (
         <div
             className={`
+        relative overflow-hidden
         mb-6 p-4 rounded-pebble 
         bg-error-container text-on-error-container 
         border border-error
@@ -45,7 +48,14 @@ export function M3ErrorAlert({
       `}
             role="alert"
         >
-            <AlertCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
+            {/* The Warning - Frill-Necked Lizard Motif */}
+            <img
+                src={lizardWarning}
+                alt=""
+                className="absolute -right-4 -bottom-4 w-32 h-auto opacity-10 pointer-events-none mix-blend-multiply"
+            />
+
+            <AlertCircle className="w-5 h-5 flex-shrink-0 mt-0.5 relative z-10" />
 
             <div className="flex-1">
                 <p className="font-medium">{message}</p>

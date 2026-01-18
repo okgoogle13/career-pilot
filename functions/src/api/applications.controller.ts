@@ -1,10 +1,10 @@
-import * as functions from "firebase-functions";
-import * as admin from "firebase-admin";
+import functions from "firebase-functions";
+import admin from "firebase-admin";
 import type { QueryDocumentSnapshot } from "firebase-admin/firestore";
 import type { Request, Response } from "express";
 import { validateFirebaseIdToken } from "../middleware/auth.middleware";
 import { handleError, sendResponse } from "../utils/api.utils";
-import * as PDFDocument from "pdfkit";
+import PDFDocument from "pdfkit";
 import { Document, Packer, Paragraph, TextRun, HeadingLevel } from "docx";
 import { Buffer } from "buffer";
 
@@ -159,7 +159,9 @@ export const listApplications = functions.https.onRequest(async (req: Request, r
     }
 
     const snapshot = await query.orderBy("updatedAt", "desc").get();
-    const applications = snapshot.docs.map((doc) => applicationFromFirestore(doc));
+    const applications = snapshot.docs.map((doc: QueryDocumentSnapshot) =>
+      applicationFromFirestore(doc)
+    );
 
     return sendResponse(res, 200, applications);
   } catch (error) {
@@ -311,6 +313,67 @@ export const scheduleInterview = functions.https.onRequest(async (req: Request, 
 });
 
 /**
+ * Add a contact to an application
+ * POST /applications/contact
+ */
+export const addContact = functions.https.onRequest(async (req: Request, res: Response) => {
+  try {
+    const { userId, error } = await validateFirebaseIdToken(req, res);
+    if (!userId || error) {
+      return sendResponse(res, 401, { error: error || "Unauthorized" });
+    }
+
+    const { applicationId, contact } = req.body as {
+      applicationId?: string;
+      contact?: Contact;
+    };
+
+    if (!applicationId || !contact?.name) {
+      return sendResponse(res, 400, { error: "Application ID and contact name are required" });
+    }
+
+    await applicationsRef.doc(applicationId).update({
+      contacts: admin.firestore.FieldValue.arrayUnion(contact),
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+
+    return sendResponse(res, 200, { success: true });
+  } catch (error) {
+    return handleError(res, error, "Error adding contact");
+  }
+});
+
+/**
+ * Get applications by status
+ * GET /applications/status?status=applied
+ */
+export const getApplicationsByStatus = functions.https.onRequest(async (req: Request, res: Response) => {
+  try {
+    const { userId, error } = await validateFirebaseIdToken(req, res);
+    if (!userId || error) {
+      return sendResponse(res, 401, { error: error || "Unauthorized" });
+    }
+
+    const status = req.query.status;
+    if (typeof status !== "string") {
+      return sendResponse(res, 400, { error: "Status query param is required" });
+    }
+
+    const snapshot = await applicationsRef
+      .where("userId", "==", userId)
+      .where("status", "==", status as ApplicationStatus)
+      .get();
+
+    const applications = snapshot.docs.map((doc: QueryDocumentSnapshot) =>
+      applicationFromFirestore(doc)
+    );
+    return sendResponse(res, 200, { applications });
+  } catch (error) {
+    return handleError(res, error, "Error fetching applications by status");
+  }
+});
+
+/**
  * Bulk update applications
  * PATCH /applications/bulk-update
  */
@@ -368,10 +431,12 @@ export const exportApplications = functions.https.onRequest(async (req: Request,
     }
 
     const snapshot = await query.get();
-    const applications = snapshot.docs.map((doc) => applicationFromFirestore(doc));
+    const applications = snapshot.docs.map((doc: QueryDocumentSnapshot) =>
+      applicationFromFirestore(doc)
+    );
     const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
 
-    let exportData: string | Buffer;
+    let exportData: string | Buffer = "";
     let contentType: string;
     let filename: string;
 
@@ -399,7 +464,7 @@ export const exportApplications = functions.https.onRequest(async (req: Request,
 
         const csvRows = [
           headers.join(","),
-          ...applications.map((app) =>
+          ...applications.map((app: Application) =>
             headers
               .map((field) => {
                 const value = (app as Record<string, unknown>)[field] ?? "";
@@ -428,7 +493,7 @@ export const exportApplications = functions.https.onRequest(async (req: Request,
         doc.fontSize(20).text("Job Applications", { align: "center" });
         doc.moveDown();
 
-        applications.forEach((app, index) => {
+        applications.forEach((app: Application, index: number) => {
           doc
             .fontSize(14)
             .text(`${index + 1}. ${app.companyName} - ${app.jobTitle} (${app.status})`);
@@ -462,7 +527,7 @@ export const exportApplications = functions.https.onRequest(async (req: Request,
                   heading: HeadingLevel.HEADING_1,
                   spacing: { after: 200 },
                 }),
-                ...applications.flatMap((app, index) => [
+                ...applications.flatMap((app: Application, index: number) => [
                   new Paragraph({
                     text: `${index + 1}. ${app.companyName} - ${app.jobTitle}`,
                     heading: HeadingLevel.HEADING_2,

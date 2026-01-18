@@ -34,6 +34,8 @@ import { GlassLeafCard } from '@/features/gallery/GlassLeafCard';
 import { NativeAnchor } from '@/components/ui/NativeAnchor';
 import { TechCard } from './TechCard';
 import { SplitHeader } from '@/components/shared/SplitHeader';
+import { HaeckelIcon } from '../../components/ui/HaeckelIcon';
+import lichenTexture from '../../assets/motifs/motif-laboratory-lichen-texture.png';
 
 // ============================================================================
 // TYPE DEFINITIONS
@@ -231,6 +233,16 @@ export function Analysis() {
 
   return (
     <GardenLayout>
+      {/* Laboratory Motif - Lichen Texture Overlay */}
+      <div
+        className="fixed inset-0 pointer-events-none opacity-[0.12] mix-blend-multiply z-0"
+        style={{
+          backgroundImage: `url(${lichenTexture})`,
+          backgroundSize: '800px',
+          backgroundRepeat: 'repeat'
+        }}
+      />
+
       {/* Structural Plant Asset - Kangaroo floor-right */}
       <NativeAnchor variant="kangaroo" anchor="floor-right" blurIntensity="low" className="z-0 opacity-50" />
 
@@ -264,6 +276,12 @@ export function Analysis() {
             title="PERFORMANCE"
             highlight="Analysis"
           />
+
+          {/* Decorative Haeckel Specimen */}
+          <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 top-0 opacity-40">
+            <HaeckelIcon row={5} col={1} size={120} colorFilter="grayscale(1)" />
+          </div>
+
           <NorthcoteButton
             onClick={handleDownloadAnalysis}
             variant="secondary"

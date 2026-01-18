@@ -1,17 +1,44 @@
-import * as admin from "firebase-admin";
-import * as firebase from "firebase-admin/firestore";
-import { genkit } from "@genkit-ai/core";
-import { defineFlow } from "@genkit-ai/flow";
+import admin from "firebase-admin";
+import type { Firestore } from "firebase-admin/firestore";
+import { z } from "genkit";
+import { ai } from "../genkit";
 import { JobListing } from "../types/job_listing";
 import { FirebaseVectorSearch } from "../lib/firebase_vector_search";
 import https from "https";
 
-// Configure Genkit to use the default model
-const model = genkit.model("gemini-pro");
+const ExtractOptionsSchema = z.object({
+  extractSkills: z.boolean().default(true),
+  extractSalary: z.boolean().default(true),
+  extractLocation: z.boolean().default(true),
+});
+
+const ExtractInputSchema = z.object({
+  source: z.union([z.string(), z.object({ url: z.string().url() })]),
+  options: ExtractOptionsSchema.optional(),
+});
+
+const SalarySchema = z.object({
+  min: z.number().optional(),
+  max: z.number().optional(),
+  currency: z.string().optional(),
+});
+
+const JobListingSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  company: z.string(),
+  description: z.string(),
+  skills: z.array(z.string()),
+  salary: SalarySchema.optional(),
+  location: z.string().optional(),
+  source: z.string(),
+  createdAt: z.any(),
+  updatedAt: z.any().optional(),
+});
 
 export class JobListingExtractor {
   private vectorSearch: FirebaseVectorSearch<JobListing>;
-  private db: firebase.Firestore;
+  private db: Firestore;
 
   constructor() {
     this.db = admin.firestore();
@@ -21,36 +48,16 @@ export class JobListingExtractor {
   /**
    * Extract job listing from text or URL
    */
-  extract = defineFlow(
+  extract = ai.defineFlow(
     {
       name: "extractJobListing",
-      inputSchema: {
-        type: "object",
-        properties: {
-          source: { type: "string" },
-          options: {
-            type: "object",
-            properties: {
-              extractSkills: { type: "boolean", default: true },
-              extractSalary: { type: "boolean", default: true },
-              extractLocation: { type: "boolean", default: true },
-            },
-          },
-        },
-      },
-      outputSchema: {
-        type: "object",
-        properties: {
-          job: { $ref: "JobListing" },
-          metadata: { type: "object" },
-        },
-      },
+      inputSchema: ExtractInputSchema,
+      outputSchema: JobListingSchema,
     },
-    async ({
-      source,
-      options = { extractSkills: true, extractSalary: true, extractLocation: true },
-    }) => {
-      const text = typeof source === "string" ? source : await this.fetchUrl(source.url);
+    async (input) => {
+      const options =
+        input.options ?? { extractSkills: true, extractSalary: true, extractLocation: true };
+      const text = typeof input.source === "string" ? input.source : await this.fetchUrl(input.source.url);
 
       // Basic job listing extraction
       const jobListing: JobListing = {
@@ -61,7 +68,7 @@ export class JobListingExtractor {
         skills: options.extractSkills ? this.extractSkills(text) : [],
         salary: options.extractSalary ? this.extractSalary(text) : undefined,
         location: options.extractLocation ? this.extractLocation(text) : undefined,
-        source: typeof source === "string" ? "text" : source.url,
+        source: typeof input.source === "string" ? "text" : input.source.url,
         createdAt: admin.firestore.FieldValue.serverTimestamp(),
       };
 
@@ -94,10 +101,12 @@ export class JobListingExtractor {
       minScore: data.minScore,
       filters: data.filters,
     });
-    return results.map(({ id: _id, score, metadata }) => ({
-      job: metadata,
-      score,
-    }));
+    return results.map(
+      ({ id: _id, score, metadata }: { id: string; score: number; metadata: JobListing }) => ({
+        job: metadata,
+        score,
+      })
+    );
   }
 
   private async fetchUrl(url: string): Promise<string> {
@@ -191,6 +200,9 @@ export class JobListingExtractor {
     const text = `${job.title} ${job.company || ""} ${job.description}`.trim();
 
     // Use Genkit to generate embeddings
+    const model = (await ai.model("gemini-pro")) as unknown as {
+      embed: (args: { content: string; taskType: string }) => Promise<{ embedding: number[] }>;
+    };
     const response = await model.embed({
       content: text,
       taskType: "retrieval_document",

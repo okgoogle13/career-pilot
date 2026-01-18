@@ -16,7 +16,7 @@
  * ```
  */
 
-import { RuntimeOptions } from "firebase-functions";
+import type { RuntimeOptions } from "firebase-functions/v1";
 
 /**
  * Lightweight API operations (CRUD, simple Firestore queries)
