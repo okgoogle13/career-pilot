@@ -1,0 +1,406 @@
+/**
+ * Northcote Curio Design Tokens - CareerCopilot V2.0
+ * 
+ * Aesthetic: Victorian Naturalist Field Station
+ * Central Metaphor: A curated workspace where professional history is treated as precious biological specimens
+ * 
+ * Mode A (Gallery): Wonder & Possibility - Gouache on Dark Ironbark
+ * Mode B (Laboratory): Clarity & Investigation - Aged Field Note Paper
+ * 
+ * Generated from: frontend/src/theme/tokens.json
+ * Anti-Slop Compliance: ENFORCED
+ */
+
+/* ========================================================================
+ * ROOT SCOPE - Shared Foundation
+ * ======================================================================== */
+
+:root {
+  /* ========================================================================
+   * COLOR SYSTEM - Moonlight on Velvet Palette
+   * ======================================================================== */
+
+  /* Shared Surface */
+  --color-surface-specimen-night: #1A1714;
+
+  /* Primary - Wattle Gold Family */
+  --color-primary-wattle-shadow: #8B7A35;
+  --color-primary-wattle-gold: #D4A84B;
+  --color-primary-wattle-glow: #E8C963;
+  --color-primary-wattle-bloom: #F5DDAA;
+  --color-primary-wattle-gold-container: rgba(212, 168, 75, 0.12);
+  --color-primary-on-primary: #1A1714;
+
+  /* Tertiary - Waratah Crimson Family */
+  --color-tertiary-waratah-stem: #7A3A2E;
+  --color-tertiary-waratah-crimson: #C45C4B;
+  --color-tertiary-waratah-glow: #E07865;
+  --color-tertiary-waratah-bloom: #F5A89A;
+  --color-tertiary-waratah-container: rgba(196, 92, 75, 0.15);
+
+  /* Secondary - Flannel Flower (Metadata) */
+  --color-secondary-flannel-flower: #A8A097;
+  --color-secondary-flannel-dim: #7D766D;
+  --color-secondary-flannel-faint: #5A544C;
+
+  /* On-Surface Text */
+  --color-text-parchment: #F5F0E8;
+  --color-text-parchment-dim: #D9D4CC;
+  --color-text-parchment-aged: #C4BFB5;
+
+  /* Etching (Grid Lines & Annotations) */
+  --color-etching-line: rgba(212, 190, 150, 0.15);
+  --color-etching-line-strong: rgba(212, 190, 150, 0.25);
+  --color-etching-fill: rgba(212, 190, 150, 0.05);
+  --color-etching-annotation-ink: #A89F8C;
+
+  /* ========================================================================
+   * TYPOGRAPHY - Federation Typography Stack
+   * ======================================================================== */
+
+  /* Font Families */
+  --font-family-proclamation: 'Libre Bodoni', 'Playfair Display', serif;
+  --font-family-bloom: 'Fraunces', serif;
+  --font-family-field-note: 'Work Sans', sans-serif;
+  --font-family-annotation: 'JetBrains Mono', monospace;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* Typography - Display Hero (Landing Proclamations) */
+  --font-display-hero: 'Libre Bodoni', 'Playfair Display', serif;
+  --font-size-display-hero: 72px;
+  --line-height-display-hero: 1.0;
+  --font-weight-display-hero: 700;
+  --letter-spacing-display-hero: -0.02em;
+
+  /* Typography - Metric Display (Ultra-light Numerals 100-200 weight) */
+  --font-metric-display: 'Fraunces', serif;
+  --font-size-metric-display: 48px;
+  --line-height-metric-display: 1.0;
+  --font-weight-metric-display: 100;
+  --font-variation-metric-display: 'wght' 100, 'SOFT' 0, 'WONK' 0;
+  --letter-spacing-metric-display: -0.03em;
+
+  /* ========================================================================
+   * SHAPE - Organic Asymmetry (Eroded Stones, Not CAD Rectangles)
+   * Reference: md-ref-shape-pebble (Validation Marker)
+   * ======================================================================== */
+
+  --radius-pebble: 20px 6px 16px 28px;
+  --radius-stone: 16px 4px 12px 24px;
+  --radius-leaf: 24px 8px 20px 4px;
+  --radius-petal: 12px 4px 16px 8px;
+  --radius-seed: 8px 4px 10px 6px;
+
+  /* ========================================================================
+   * ELEVATION - Ink Pool Shadows (Diffuse, Not Harsh)
+   * ======================================================================== */
+
+  --shadow-rest: 0 4px 24px rgba(20, 18, 16, 0.5), 0 1px 4px rgba(0, 0, 0, 0.2);
+  --shadow-hover: 0 8px 40px rgba(20, 18, 16, 0.6), 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-glow-gold: 0 0 40px rgba(212, 168, 75, 0.15);
+
+  /* ========================================================================
+   * MOTION - Viscous Breeze Physics
+   * ======================================================================== */
+
+  /* Spring Physics Parameters */
+  --spring-stiffness-gallery: 500;
+  --spring-damping-gallery: 27;
+  --spring-stiffness-laboratory: 800;
+  --spring-damping-laboratory: 40;
+  --spring-mass: 1;
+
+  /* Easing Curves */
+  --easing-viscous: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --easing-precise: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --easing-settle: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --easing-snap: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --easing-linear: linear;
+
+  /* Semantic Duration Scale */
+  --duration-instant: 100ms;
+  --duration-fast: 180ms;
+  --duration-standard: 280ms;
+  --duration-moderate: 450ms;
+  --duration-slow: 600ms;
+  --duration-deliberate: 900ms;
+
+  /* Legacy Duration Aliases (for backwards compatibility) */
+  --duration-micro: 180ms;
+  --duration-short: 280ms;
+  --duration-medium: 450ms;
+  --duration-long: 600ms;
+
+  /* ========================================================================
+   * SPACING - 4px/8px Grid System
+   * ======================================================================== */
+
+  --space-0: 0;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+}
+
+/* ========================================================================
+ * MODE A: THE GALLERY (Wonder & Possibility)
+ * Context: Landing, Opportunities, Dashboard Hero
+ * Vibe: Candlelit conservatory at night
+ * ======================================================================== */
+
+[data-mode="gallery"] {
+  /* Surface Colors */
+  --color-surface: #141210;
+  /* Charcoal Bark */
+  --color-container: #2C2723;
+  /* Eucalypt Smoke */
+  --color-container-high: #3D3632;
+  --color-container-highest: #4A433D;
+
+  /* Status Colors (Botanical) */
+  --color-status-success: #7A9E82;
+  /* Ghost Gum */
+  --color-status-success-container: rgba(122, 158, 130, 0.15);
+  --color-status-progress: #9B8AAD;
+  /* Native Violet */
+  --color-status-progress-container: rgba(155, 138, 173, 0.15);
+  --color-status-warning: #D4885C;
+  /* Banksia Orange */
+  --color-status-warning-container: rgba(212, 136, 92, 0.15);
+
+  /* Glassmorphism */
+  --glass-surface: rgba(44, 39, 35, 0.75);
+  --glass-surface-elevated: rgba(61, 54, 50, 0.8);
+  --glass-border: rgba(168, 160, 151, 0.1);
+  --glass-blur: 20px;
+
+  /* Background Texture - Gouache on Dark Ironbark */
+  background:
+    radial-gradient(ellipse 60% 50% at 85% 15%, rgba(212, 168, 75, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 60% at 20% 60%, rgba(196, 92, 75, 0.05) 0%, transparent 40%),
+    radial-gradient(ellipse 80% 40% at 50% 100%, rgba(155, 138, 173, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 60% 40%, rgba(122, 158, 130, 0.03) 0%, transparent 30%),
+    var(--color-surface-specimen-night);
+}
+
+/* ========================================================================
+ * MODE B: THE LABORATORY (Clarity & Investigation)
+ * Context: Resume Analysis, Skills Extraction, Document Parsing
+ * Vibe: Well-lit examination table
+ * RULE: NO FLOWERS - Only structural truths
+ * ======================================================================== */
+
+[data-mode="laboratory"] {
+  /* Surface Colors (Cooler, Clinical) */
+  --color-surface: #16141A;
+  /* Charcoal Slate */
+  --color-container: #252230;
+  /* Slate Smoke */
+  --color-container-high: #32303D;
+  --color-container-highest: #3F3D4A;
+
+  /* Status Colors (Clinical) */
+  --color-status-success: #6B9E7A;
+  /* Clinical Sage */
+  --color-status-success-container: rgba(107, 158, 122, 0.12);
+  --color-status-alert: #B85450;
+  /* Clinical Alert */
+  --color-status-alert-container: rgba(184, 84, 80, 0.12);
+  --color-status-neutral: #8A8895;
+  /* Clinical Neutral */
+  --color-status-neutral-container: rgba(138, 136, 149, 0.1);
+
+  /* Glassmorphism */
+  --glass-surface: rgba(37, 34, 48, 0.8);
+  --glass-surface-elevated: rgba(50, 48, 61, 0.85);
+  --glass-border: rgba(168, 159, 140, 0.08);
+  --glass-blur: 24px;
+
+  /* Background Texture - Aged Field Note Paper with Grid */
+  background:
+    linear-gradient(rgba(212, 190, 150, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 190, 150, 0.15) 1px, transparent 1px),
+    radial-gradient(ellipse 40% 35% at 90% 10%, rgba(212, 168, 75, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 60% at 30% 70%, rgba(50, 48, 61, 0.3) 0%, transparent 50%),
+    var(--color-surface-specimen-night);
+  background-size: 100px 100px, 100px 100px, 100% 100%, 100% 100%, 100% 100%;
+}
+
+/* ========================================================================
+ * TYPOGRAPHY SCALE - Gallery Mode (Expressive)
+ * ======================================================================== */
+
+[data-mode="gallery"] {
+  --type-display-large-family: var(--font-family-bloom);
+  --type-display-large-size: 48px;
+  --type-display-large-line-height: 1.1;
+  --type-display-large-weight: 700;
+  --type-display-large-axes: 'wght' 700, 'SOFT' 50, 'WONK' 1;
+  --type-display-large-tracking: -0.02em;
+
+  --type-display-small-family: var(--font-family-bloom);
+  --type-display-small-size: 32px;
+  --type-display-small-line-height: 1.2;
+  --type-display-small-weight: 600;
+  --type-display-small-axes: 'wght' 600, 'SOFT' 40, 'WONK' 1;
+}
+
+/* ========================================================================
+ * TYPOGRAPHY SCALE - Laboratory Mode (Restrained)
+ * ======================================================================== */
+
+[data-mode="laboratory"] {
+  --type-display-large-family: var(--font-family-bloom);
+  --type-display-large-size: 42px;
+  --type-display-large-line-height: 1.15;
+  --type-display-large-weight: 500;
+  --type-display-large-axes: 'wght' 500, 'SOFT' 20, 'WONK' 0;
+
+  --type-display-small-family: var(--font-family-bloom);
+  --type-display-small-size: 28px;
+  --type-display-small-line-height: 1.25;
+  --type-display-small-weight: 500;
+  --type-display-small-axes: 'wght' 500, 'SOFT' 15, 'WONK' 0;
+}
+
+/* ========================================================================
+ * SHARED TYPOGRAPHY SCALES
+ * ======================================================================== */
+
+:root {
+  --type-headline-medium-family: var(--font-family-bloom);
+  --type-headline-medium-size: 24px;
+  --type-headline-medium-line-height: 1.3;
+  --type-headline-medium-weight: 500;
+
+  --type-title-large-family: var(--font-family-field-note);
+  --type-title-large-size: 18px;
+  --type-title-large-line-height: 1.4;
+  --type-title-large-weight: 600;
+
+  --type-body-large-family: var(--font-family-field-note);
+  --type-body-large-size: 16px;
+  --type-body-large-line-height: 1.5;
+  --type-body-large-weight: 400;
+
+  --type-body-medium-family: var(--font-family-field-note);
+  --type-body-medium-size: 14px;
+  --type-body-medium-line-height: 1.5;
+  --type-body-medium-weight: 400;
+
+  --type-label-large-family: var(--font-family-field-note);
+  --type-label-large-size: 14px;
+  --type-label-large-line-height: 1.4;
+  --type-label-large-weight: 500;
+
+  --type-label-medium-family: var(--font-family-field-note);
+  --type-label-medium-size: 12px;
+  --type-label-medium-line-height: 1.4;
+  --type-label-medium-weight: 500;
+
+  --type-mono-data-family: var(--font-family-annotation);
+  --type-mono-data-size: 12px;
+  --type-mono-data-line-height: 1.5;
+  --type-mono-data-weight: 400;
+
+  --type-mono-annotation-family: var(--font-family-annotation);
+  --type-mono-annotation-size: 10px;
+  --type-mono-annotation-line-height: 1.4;
+  --type-mono-annotation-weight: 500;
+  --type-mono-annotation-tracking: 0.1em;
+  --type-mono-annotation-transform: uppercase;
+}
+
+/* ========================================================================
+ * COMPONENT TOKENS
+ * ======================================================================== */
+
+/* Card Component */
+.card-gallery {
+  background: var(--glass-surface);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-stone);
+  box-shadow: var(--shadow-rest);
+}
+
+.card-laboratory {
+  background: var(--glass-surface);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-stone);
+  box-shadow: var(--shadow-rest);
+}
+
+/* Button Component - Primary */
+.btn-primary {
+  background: var(--color-primary-wattle-gold);
+  color: var(--color-primary-on-primary);
+  border-radius: var(--radius-leaf);
+  font-family: var(--font-family-field-note);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0.65rem 1.25rem;
+  transition: all var(--duration-short) var(--easing-viscous);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-wattle-glow);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-gold);
+}
+
+/* Button Component - Secondary */
+.btn-secondary {
+  background: var(--glass-surface-elevated);
+  color: var(--color-secondary-flannel-flower);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-petal);
+  font-family: var(--font-family-field-note);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0.65rem 1.25rem;
+  transition: all var(--duration-short) var(--easing-viscous);
+}
+
+/* ========================================================================
+ * HOVER INTERACTIONS - "The Bloom"
+ * Typography inflates on hover, not just color change
+ * ======================================================================== */
+
+.bloom-hover {
+  transition: font-variation-settings var(--duration-short) var(--easing-viscous);
+  font-variation-settings: 'wght' 600, 'SOFT' 50, 'WONK' 1;
+}
+
+.bloom-hover:hover {
+  font-variation-settings: 'wght' 750, 'SOFT' 80, 'WONK' 1;
+  transform: translateY(-2px);
+}
+
+/* ========================================================================
+ * ANTI-SLOP ENFORCEMENT
+ * ======================================================================== */
+
+/* Forbidden Fonts Check - If these appear, the system has regressed */
+* {
+  /* Ensure no system fonts leak through */
+  font-family: var(--font-family-field-note);
+}
+
+/* Ensure no pure black/white */
+body {
+  background: var(--color-surface-specimen-night);
+  color: var(--color-text-parchment);
+}

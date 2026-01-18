@@ -1,0 +1,17 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+    match /temp_ingestions/{file} {
+      // Only authenticated users can upload temporary files
+      allow write: if request.auth != null;
+      
+      // Only the owner can read their temporary files
+      // File naming convention: {userId}_{timestamp}_{filename}
+      allow read: if request.auth != null && 
+        file.split('_')[0] == request.auth.uid;
+    }
+  }
+}

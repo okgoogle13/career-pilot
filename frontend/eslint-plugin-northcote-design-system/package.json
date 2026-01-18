@@ -1,0 +1,17 @@
+{
+    "name": "eslint-plugin-northcote-design-system",
+    "version": "1.0.0",
+    "description": "ESLint plugin to enforce Northcote Curio design system constraints",
+    "main": "index.js",
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "design-system",
+        "northcote-curio"
+    ],
+    "author": "Northcote Curio Team",
+    "license": "MIT",
+    "peerDependencies": {
+        "eslint": ">=8.0.0"
+    }
+}

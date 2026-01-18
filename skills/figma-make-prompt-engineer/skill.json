@@ -1,0 +1,16 @@
+{
+  "name": "Figma Make Prompt Engineer",
+  "id": "figma-make-prompt-engineer",
+  "version": "1.0.0",
+  "description": "Generate vision-first Figma Make prompts for Northcote Curio design system with M3 Expressive principles and Victorian naturalist aesthetics",
+  "triggers": [
+    "create figma prompt",
+    "figma make",
+    "design brief",
+    "landing page prompt",
+    "generate figma design"
+  ],
+  "category": "Design System",
+  "author": "NJD",
+  "tags": ["figma", "design-system", "m3-expressive", "prompt-engineering", "northcote-curio"]
+}

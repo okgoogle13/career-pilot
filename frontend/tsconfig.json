@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": false, // Temporarily disable to handle unused variables later
+    "noUnusedParameters": false, // Temporarily disable
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+    },
+    "types": [
+      "node",
+      "jest",
+      "vite/client"
+    ]
+  },
+  "include": [
+    "src",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/*.test.tsx",
+    "**/*.spec.tsx",
+    "**/__mocks__",
+    "src/components/library",
+    "src/components/m3-expressive",
+    "functions",
+    "packages",
+    "eslint.config.ts",
+    "vite.config.ts",
+    "playwright.config.ts",
+    "**/*.stories.tsx",
+    "**/*.stories.ts"
+  ]
+}

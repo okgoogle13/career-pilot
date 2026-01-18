@@ -1,0 +1,55 @@
+name: 'Prepare Frontend for Deployment'
+description: 'Downloads frontend artifacts or fails fast if not available'
+inputs:
+  artifact-name:
+    description: 'Name of the frontend artifact'
+    required: true
+    default: 'frontend-dist'
+  ci-run-id:
+    description: 'CI workflow run ID for artifact download'
+    required: false
+outputs:
+  found:
+    description: 'Whether artifact was found'
+    value: ${{ steps.check.outputs.found }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Download frontend artifact from CI
+      uses: actions/download-artifact@v4
+      continue-on-error: true
+      id: download
+      with:
+        name: ${{ inputs.artifact-name }}
+        path: frontend/dist
+        repository: ${{ github.repository }}
+        run-id: ${{ inputs.ci-run-id || github.event.workflow_run.id }}
+
+    - name: Verify artifact was downloaded
+      id: check
+      shell: bash
+      run: |
+        if [ -d "frontend/dist" ] && [ "$(ls -A frontend/dist 2>/dev/null)" ]; then
+          echo "found=true" >> $GITHUB_OUTPUT
+          echo "✅ Frontend artifacts downloaded successfully"
+          echo "📦 Contents:"
+          ls -lh frontend/dist/ | head -10
+        else
+          echo "found=false" >> $GITHUB_OUTPUT
+          echo "❌ Frontend artifacts not found from CI run"
+          echo "::error::Frontend build artifacts missing. This indicates a CI failure."
+          echo "::error::Please check the CI workflow at run ID: ${{ inputs.ci-run-id || github.event.workflow_run.id }}"
+          echo "::error::Deployment cannot proceed without a successful frontend build."
+          exit 1
+        fi
+
+    - name: Copy dist to deployment location
+      shell: bash
+      run: |
+        if [ -d "frontend/dist" ]; then
+          echo "📂 Preparing artifacts for deployment..."
+          mkdir -p dist
+          cp -r frontend/dist/* dist/
+          echo "✅ Frontend ready for deployment"
+        fi

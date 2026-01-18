@@ -1,0 +1,13 @@
+{
+    "codeConnect": {
+        "include": [
+            "frontend/src/components/**/*.{tsx,jsx}"
+        ],
+        "exclude": [
+            "**/node_modules/**",
+            "**/*.test.{tsx,jsx}",
+            "**/*.stories.{tsx,jsx}",
+            "**/*.spec.{tsx,jsx}"
+        ]
+    }
+}

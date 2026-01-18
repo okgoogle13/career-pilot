@@ -1,0 +1,29 @@
+{
+  "queue": [
+    {
+      "name": "M3TextField",
+      "componentPath": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/M3TextField.tsx",
+      "storiesPath": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/M3TextField.stories.tsx",
+      "testsPath": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/components/ui/M3TextField.test.tsx",
+      "complianceScore": "95",
+      "status": "awaiting_review",
+      "queuedAt": "2026-01-14T02:10:29Z",
+      "type": "LEGACY"
+    },
+    {
+      "name": "DesignTokens-CriticalFixes",
+      "componentPath": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/theme/tokens.json",
+      "storiesPath": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/theme/tokens.json.stories.tsx",
+      "testsPath": "/Users/okgoogle13/.gemini/antigravity/playground/primordial-quasar/frontend/src/theme/tokens.json.test.tsx",
+      "complianceScore": "100",
+      "status": "awaiting_review",
+      "queuedAt": "2026-01-14T02:23:24Z",
+      "type": "LEGACY"
+    }
+  ],
+  "metadata": {
+    "created": "2026-01-14T13:08:12+11:00",
+    "description": "Components awaiting Claude Desktop review",
+    "workflow": "Antigravity adds components here after migration"
+  }
+}
