@@ -3,6 +3,7 @@ import { Briefcase, Calendar, MapPin, Mail, Link as LinkIcon, Edit3 } from 'luci
 import ResumeUploader from './ResumeUploader';
 import { GardenLayout } from '@/components/layouts/GardenLayout';
 import { AuroraHeader } from '@/components/ui/AuroraHeader';
+import texturePattern from '@/assets/images/texture-pattern.png';
 import { GlassLeafCard } from '@/components/ui/GlassLeafCard';
 import { NativeAnchor } from '@/components/ui/NativeAnchor';
 import { motion } from 'framer-motion';
@@ -18,7 +19,10 @@ export function ProfileView() {
       <div className="max-w-5xl mx-auto pb-12 w-full relative z-10">
         {/* Banner */}
         <div className="h-48 md:h-64 rounded-leaf bg-gradient-to-r from-[#21005D] to-[#381E72] overflow-hidden relative shadow-lg">
-          <div className="absolute inset-0 bg-[url('/texture-pattern.png')] opacity-30 mix-blend-overlay" />
+          <div
+            className="absolute inset-0 opacity-30 mix-blend-overlay"
+            style={{ backgroundImage: `url(${texturePattern})` }}
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-[#141218] via-transparent to-transparent opacity-60" />
         </div>
 

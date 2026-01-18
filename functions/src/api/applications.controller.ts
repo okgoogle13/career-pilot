@@ -467,7 +467,8 @@ export const exportApplications = functions.https.onRequest(async (req: Request,
           ...applications.map((app: Application) =>
             headers
               .map((field) => {
-                const value = (app as Record<string, unknown>)[field] ?? "";
+                const record = app as unknown as Record<string, unknown>;
+                const value = record[field] ?? "";
                 // CSV escaping: double double-quotes to escape quotes per RFC 4180
                 return `"${value.toString().replace(/"/g, '""')}"`;
               })

@@ -4,6 +4,7 @@ import { z } from "genkit";
 import { ai } from "../genkit";
 import { JobListing } from "../types/job_listing";
 import { FirebaseVectorSearch } from "../lib/firebase_vector_search";
+import { textEmbedding004 } from "@genkit-ai/googleai";
 import https from "https";
 
 const ExtractOptionsSchema = z.object({
@@ -199,32 +200,12 @@ export class JobListingExtractor {
   }): Promise<number[]> {
     const text = `${job.title} ${job.company || ""} ${job.description}`.trim();
 
-    // Use Genkit to generate embeddings
-    const model = (await ai.model("gemini-pro")) as unknown as {
-      embed: (args: { content: string; taskType: string }) => Promise<{ embedding: number[] }>;
-    };
-    const response = await model.embed({
+    const [result] = await ai.embed({
+      embedder: textEmbedding004,
       content: text,
-      taskType: "retrieval_document",
     });
 
-    return response.embedding;
-  }
-
-  private hashString(str: string): number {
-    let hash = 0;
-    for (let i = 0; i < str.length; i++) {
-      const char = str.charCodeAt(i);
-      hash = (hash << 5) - hash + char;
-      hash = hash & hash; // Convert to 32bit integer
-    }
-    return Math.abs(hash);
-  }
-
-  private normalizeVector(vector: number[]): number[] {
-    const norm = Math.sqrt(vector.reduce((sum, val) => sum + val * val, 0));
-    if (norm === 0) return vector;
-    return vector.map((val) => val / norm);
+    return result.embedding;
   }
 
   private generateId(): string {

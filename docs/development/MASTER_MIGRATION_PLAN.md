@@ -90,14 +90,20 @@
 - [x] 7.2 Gallery Wiring
     - [x] Connect Feed to meaningful activity data (Mocked + Decor)
     - [x] Connect Kanban to application state (Mocked)
+- [ ] 7.3 Genkit Embedding Integration (Functions)
+    - [ ] Replace placeholder embeddings in `functions/src/services/job_listing_extractor.ts`
+    - [ ] Configure Genkit embedder plugin (e.g., Google AI embedder)
+    - [ ] Ensure Zod schemas remain enforced for flow inputs/outputs
 
 ## Phase 5.5: Stabilization & QA (Remediation)
 - [ ] 5.5.1 Verification Tasks
-    - [ ] Build & Preview Gate (Run `pnpm build` & `pnpm preview`)
+    - [x] Build Gate (Ran `npm run build`; frontend + functions compile)
+    - [ ] Preview Gate (Run `npm run preview`)
     - [ ] Navigation Regression Sweep (Transitions, `?tool=` routing, history)
     - [ ] Component Coverage Audit (Check `MetricCard`, `ImpactEnhancements`, etc.)
     - [ ] Design Token Health Check (Verify Tailwind tokens, global styles)
     - [ ] Smoke Tests (Expand UI suite to Gallery/Laboratory views)
+    - [x] Asset Path Stabilization (Resolved `/texture-pattern.png` runtime warning in Profile view)
 - [ ] 5.5.2 Quality Gates
     - [ ] Performance Baseline (Capture Lighthouse metrics)
     - [ ] Accessibility Baseline (Audit contrast/focus/ARIA)

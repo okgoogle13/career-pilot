@@ -29,7 +29,6 @@ import type { RuntimeOptions } from "firebase-functions/v1";
  * Memory usage: 30-80MB
  */
 export const lightweightApi: RuntimeOptions = {
-  region: "us-central1",
   memory: "128MB",
   timeoutSeconds: 10,
   maxInstances: 100,
@@ -46,7 +45,6 @@ export const lightweightApi: RuntimeOptions = {
  * Memory usage: 80-150MB
  */
 export const mediumApi: RuntimeOptions = {
-  region: "us-central1",
   memory: "256MB",
   timeoutSeconds: 30,
   maxInstances: 50,
@@ -63,7 +61,6 @@ export const mediumApi: RuntimeOptions = {
  * Memory usage: 150-400MB
  */
 export const heavyApi: RuntimeOptions = {
-  region: "us-central1",
   memory: "512MB",
   timeoutSeconds: 60,
   maxInstances: 10,
@@ -82,7 +79,6 @@ export const heavyApi: RuntimeOptions = {
  * Note: Set minInstances: 1 during peak hours to reduce cold starts
  */
 export const aiProcessing: RuntimeOptions = {
-  region: "us-central1",
   memory: "1GB",
   timeoutSeconds: 180,
   maxInstances: 5,
@@ -99,7 +95,6 @@ export const aiProcessing: RuntimeOptions = {
  * Memory usage: 100-200MB
  */
 export const userCleanup: RuntimeOptions = {
-  region: "us-central1",
   memory: "256MB",
   timeoutSeconds: 60,
   maxInstances: 10,
@@ -115,7 +110,6 @@ export const userCleanup: RuntimeOptions = {
  * Memory usage: 200-500MB
  */
 export const backgroundTask: RuntimeOptions = {
-  region: "us-central1",
   memory: "512MB",
   timeoutSeconds: 120,
   maxInstances: 10,
@@ -167,9 +161,11 @@ export function withPeakHoursWarmup(config: RuntimeOptions): RuntimeOptions {
  * Use this for low-traffic, non-critical functions
  */
 export function withCostOptimization(config: RuntimeOptions): RuntimeOptions {
+  const maxInstances =
+    typeof config.maxInstances === "number" ? config.maxInstances : 10;
   return {
     ...config,
     minInstances: 0,
-    maxInstances: Math.min(config.maxInstances || 10, 10),
+    maxInstances: Math.min(maxInstances, 10),
   };
 }
